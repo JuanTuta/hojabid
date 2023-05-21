@@ -54,4 +54,4 @@ jobs:
           app-name: 'HojaVid'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_09DFA40EE09846E998C4A4691E09D1C4 }}
-          package: .
+          package: ./index.html
