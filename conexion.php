@@ -11,7 +11,7 @@ $connectionOptions= array(
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 if ($conn === false) {
     die(formatErrors(sqlsrv_errors()));
-    echo ("F");
+    echo ("Vida F, Fsísima");
 }
 else {
     //Echo ("TUMBA LA CASAAAA MAMIII");
