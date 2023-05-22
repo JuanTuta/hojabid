@@ -21,7 +21,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
               </div>
               <form class="login-form">
-                <button class="button2" onclick="location.href='login.php'">Usuario</button>
+                <button class="button2" onclick="location.href='guardar_datos.php'">Usuario</button>
                 <button class="button2" onclick="redirigir()">Empresa</button>
                 <p class="message">Admin? <a href="#">Click aqui</a></p>
               </form>
