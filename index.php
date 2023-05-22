@@ -22,7 +22,7 @@
               </div>
               <form class="login-form">
                 <a class="button2" href="https://emprevib.azurewebsites.net/login.php">Usuario</a>
-                <a class="button3" href="https://emprevib.azurewebsites.net/login.php">Empresa</a>
+                <a class="button2" href="https://emprevib.azurewebsites.net/login.php">Empresa</a>
                 <p class="message">Admin? <a href="#">Click aqui</a></p>
               </form>
             </div>
