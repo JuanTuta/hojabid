@@ -22,13 +22,10 @@
               </div>
               <form class="login-form">
                 <a class="button2" href="https://emprevib.azurewebsites.net/login.php">Usuario</a>
-                <a class="button2" href="https://emprevib.azurewebsites.net/login.php">Empresa</a>
+                <a class="button3" href="https://emprevib.azurewebsites.net/login.php">Empresa</a>
                 <p class="message">Admin? <a href="#">Click aqui</a></p>
               </form>
             </div>
-            <video id="video" autoplay loop poster="polina.jpg">
-              <source src="http://andytran.me/A%20peaceful%20nature%20timelapse%20video.mp4" type="video/mp4" />
-            </video>
           </div>
     </body>
     
