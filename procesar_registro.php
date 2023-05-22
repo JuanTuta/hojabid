@@ -1,5 +1,4 @@
 <?php
-// Datos de conexión a la base de datos
 $serverName = "serv1prub.database.windows.net";
 $connectionOptions = array(
     "Database" => "PPagina",
@@ -8,47 +7,53 @@ $connectionOptions = array(
     "Authentication" => "ActiveDirectoryPassword"
 );
 
-// Obtener los datos del formulario
+// Obtener los valores enviados por el formulario
 $nombre = $_POST['nombre'];
 $direccion = $_POST['direccion'];
-$numero = $_POST['numero'];
+$telefono = $_POST['numero'];
 $ubicacion = $_POST['ubicacion'];
 $salario = $_POST['salario'];
-$hv = $_FILES['hv']['name']; // Nombre del archivo subido
+$hv = $_FILES['hv']['name'];
 $video = $_POST['video'];
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
-$email = $_POST['email'];
 
-// Guardar el archivo HV en una carpeta en el servidor
-$hvDestino = "ruta/del/destino/" . $hv; // Ruta de destino del archivo HV
-move_uploaded_file($_FILES['hv']['tmp_name'], $hvDestino);
+try {
+    $conn = sqlsrv_connect($serverName, $connectionOptions);
+    if ($conn === false) {
+        die(print_r(sqlsrv_errors(), true));
+    }
 
-// Conectarse a la base de datos
-$conn = sqlsrv_connect($serverName, $connectionOptions);
-if ($conn === false) {
-    die(print_r(sqlsrv_errors(), true));
+    // Insertar en la tabla DESEMPLEADO
+    $sqlDesempleado = "INSERT INTO DESEMPLEADO (id_DESEMPLEADO, NOMBRE, DIRECCION, TELEFONO, id_UBICACION, SALARIO, id_HV, VIDEO)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+    $paramsDesempleado = array($idDesempleado[8], $nombre, $direccion, $telefono, $ubicacion, $salario, $hv, $video);
+    $stmtDesempleado = sqlsrv_query($conn, $sqlDesempleado, $paramsDesempleado);
+    if ($stmtDesempleado === false) {
+        die(print_r(sqlsrv_errors(), true));
+    }
+
+    // Obtener el ID_DESEMPLEADO generado automáticamente
+    $idDesempleado = sqlsrv_fetch_array(sqlsrv_query($conn, "SELECT @@IDENTITY"));
+
+    // Insertar en la tabla usuarioSGod
+    $sqlUsuario = "INSERT INTO usuarioSGod (nombreUsuario, contraseña) VALUES (?, ?)";
+    $paramsUsuario = array($usuario, $contrasena);
+    $stmtUsuario = sqlsrv_query($conn, $sqlUsuario, $paramsUsuario);
+    if ($stmtUsuario === false) {
+        die(print_r(sqlsrv_errors(), true));
+    }
+
+    // Cerrar la conexión a la base de datos
+    sqlsrv_close($conn);
+
+    // Redireccionar a una página de éxito o mostrar un mensaje de éxito
+    header("Location: formulario_exitoso.php");
+    exit();
+} catch (Exception $e) {
+    echo "Error: " . $e->getMessage();
 }
-
-// Crear la consulta SQL para insertar los datos en la tabla correspondiente
-$sql = "INSERT INTO NombreDeLaTabla (nombre, direccion, numero, ubicacion, salario, hv, video, usuario, contrasena, email)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
-// Preparar la consulta SQL
-$stmt = sqlsrv_prepare($conn, $sql, array($nombre, $direccion, $numero, $ubicacion, $salario, $hv, $video, $usuario, $contrasena, $email));
-if ($stmt === false) {
-    die(print_r(sqlsrv_errors(), true));
-}
-
-// Ejecutar la consulta
-if (sqlsrv_execute($stmt)) {
-    // La inserción fue exitosa
-    echo "Los datos se han insertado correctamente.";
-} else {
-    // Hubo un error al ejecutar la consulta
-    die(print_r(sqlsrv_errors(), true));
-}
-
-// Cerrar la conexión a la base de datos
-sqlsrv_close($conn);
 ?>
+
+
+
