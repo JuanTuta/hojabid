@@ -22,7 +22,7 @@
               </div>
               <form class="login-form">
                 <button class="button2" onclick="location.href='guardar_datos.php'">Usuario</button>
-                <a href="login.php"><button class="button2">Empresa</button></a>
+                <a href="https://emprevib.azurewebsites.net/login.php"><button class="button2">Empresa</button></a>
                 <p class="message">Admin? <a href="#">Click aqui</a></p>
               </form>
             </div>
