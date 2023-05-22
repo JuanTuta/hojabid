@@ -8,10 +8,11 @@ $connectionOptions = array(
 );
 
 // Verificar si se enviaron los datos del formulario
+// Verificar si se enviaron los datos del formulario
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Obtener los valores del formulario
-    $usuario = $_POST["usuario"];
-    $contrasena = $_POST["contrasena"];
+    $usuario = "JPelmamaguevo";
+    $contrasena = "mamaguevoxd";
 
     // Establecer conexión
     $conn = sqlsrv_connect($serverName, $connectionOptions);
@@ -20,7 +21,24 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         echo "Error de conexión";
     } else {
         // Consulta SQL para insertar los datos en la tabla
-        echo "se izo";
-        $sql = "INSERT INTO usuarioSGod (nombreUsuario, contraseña) VALUES ('ola', 'patimicola');";
+        $sql = "INSERT INTO usuarioSGod (nombreUsuario, contraseña) VALUES (?, ?)";
+        
+        // Preparar la consulta
+        $stmt = sqlsrv_prepare($conn, $sql, array(&$usuario, &$contrasena));
+        
+        // Verificar si la preparación de la consulta fue exitosa
+        if ($stmt === false) {
+            die(print_r(sqlsrv_errors(), true));
+            echo "Error en la preparación de la consulta";
+        } else {
+            // Ejecutar la consulta
+            if (sqlsrv_execute($stmt) === false) {
+                die(print_r(sqlsrv_errors(), true));
+                echo "Error al ejecutar la consulta";
+            } else {
+                echo "Datos insertados correctamente";
+            }
+        }
     }
 }
+
