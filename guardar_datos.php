@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         echo "Error de conexión";
     } else {
         // Consulta SQL para insertar los datos en la tabla
+        echo "se izo";
         $sql = "INSERT INTO usuarioSGod (nombreUsuario, contraseña) VALUES ($usuario, $contrasena);";
     }
 }
