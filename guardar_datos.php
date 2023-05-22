@@ -21,6 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     } else {
         // Consulta SQL para insertar los datos en la tabla
         echo "se izo";
-        $sql = "INSERT INTO usuarioSGod (nombreUsuario, contraseña) VALUES ($usuario, $contrasena);";
+        $sql = "INSERT INTO usuarioSGod (nombreUsuario, contraseña) VALUES ('ola', 'patimicola');";
     }
 }
