@@ -22,8 +22,7 @@
               </div>
               <form class="login-form">
                 <button class="button2" onclick="redirigir()">Usuario</button>
-                
-                <a href="login.php"><button class="button2">Empresa</button></a>
+                <button class="button2" onclick="redirigir()">Empresa</button>
                 <p class="message">Admin? <a href="#">Click aqui</a></p>
               </form>
             </div>
@@ -34,4 +33,5 @@
     </body>
     
 </html>
+
 
