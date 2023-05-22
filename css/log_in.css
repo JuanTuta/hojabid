@@ -48,29 +48,27 @@
 .form .button1:hover,.form .button1:active,.form .button1:focus {
   background: #ed1c24;
 }
-.form .button2 {
+.form a.button2 {
+  display: inline-block;
   background: #EF3B3A;
-  padding: 15px ;
+  padding: 15px;
   border-radius: 3px;
   color: #FFFFFF;
   font-size: 14px;
+  text-decoration: none;
+  transition: background .3s ease;
   cursor: pointer;
+  margin-bottom: 10px;
 }
-.form .button2:hover,.form .button2:active,.form .button2:focus {
+
+.form a.button2:hover,
+.form a.button2:active,
+.form a.button2:focus {
   background: #ed1c24;
 }
 
-.form .button3 {
-  background: #EF3B3A;
-  padding: 15px ;
-  border-radius: 3px;
-  color: #FFFFFF;
-  font-size: 14px;
-  cursor: pointer;
-}
-.form .button3:hover,.form .button3:active,.form .button3:focus {
-  background: #ed1c24;
-}
+
+
 
 .form .message {
   margin: 15px 0 0;
