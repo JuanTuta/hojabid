@@ -41,16 +41,7 @@
                   <option value="20">MANAGUA, NICARAGUA</option>
                 </select>
                 <input type="number" placeholder="Salario" />
-                <select name="hojadevida">
-                  <option value="1">MARIA CAMILA, 251254</option>
-                  <option value="2">ANDRES MAURICIO, 252144</option>
-                  <option value="3">DAVID GALINDO, 56666</option>
-                  <option value="4">BRAYAN ESTEBAN, 555221</option>
-                  <option value="5">JHON EDUARDO, 3336545</option>
-                  <option value="6">JUAN PSBLO TUTA, 0002144</option>
-                  <option value="7">PEDRO MOSQUERA, 878878</option>
-                  <option value="8">YAMID HERNANDO, 11145</option>
-                </select>
+                <input type="file" placeholder="HV" />
                 <input type="text" placeholder="link Video" />
                 <input type="password" placeholder="Contraseña" />
                 <input type="text" placeholder="Email" />
