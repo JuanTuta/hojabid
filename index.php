@@ -21,7 +21,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
               </div>
               <form class="login-form">
-                <button class="button2" onclick="window.location.href='login.php'">Usuario</button>
+                <a class="button2" href="https://emprevib.azurewebsites.net/login.php"><button class="button2">Usuario</button></a>
                 <a class="button2" href="https://emprevib.azurewebsites.net/login.php">Empresa</a>
                 <p class="message">Admin? <a href="#">Click aqui</a></p>
               </form>
