@@ -69,7 +69,7 @@
                 <input type="password" placeholder="Contraseña" />
                 <input type="text" placeholder="Email" />
                 <button class="button1">Crear</button>
-                <p class="message">Registrado? <a href="#">Inicia Sesion</a></p>
+                <p class="message">Registrado? <a href="index.php">Inicia Sesion</a></p>
               </form>
             </div>
             <video id="video" autoplay loop poster="polina.jpg">
