@@ -19,7 +19,7 @@
                 <input type="text" placeholder="Rason Social" />
                 <input type="text" placeholder="Representante" />
                 <input type="number" placeholder="Telefono" />
-                <select name="ubicacion">
+                <select name="ubicacion" class="custom-select">
                   <option value="1">BOGOTA, COLOMBIA</option>
                   <option value="2">MEDELLIN, COLOMBIA</option>
                   <option value="3">CALI, COLOMBIA</option>
