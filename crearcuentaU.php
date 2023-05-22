@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,12 +15,13 @@
               <div class="thumbnail">
                 <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
               </div>
-              <form class="login-form">
-              <input type="text" placeholder="Nombre" />
-                <input type="text" placeholder="Direccion" />
-                <input type="number" placeholder="Numero" />
+              <form class="login-form" action="procesar_registro.php" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre" />
+                <input type="text" name="direccion" placeholder="Direccion" />
+                <input type="number" name="numero" placeholder="Numero" />
                 <select name="ubicacion" class="custom-select">
-                <option value="">Selecciona una Ubicacion</option>
+                  <option value="">Selecciona una Ubicacion</option>
+                  <option value="">Selecciona una Ubicacion</option>
                   <option value="1">BOGOTA, COLOMBIA</option>
                   <option value="2">MEDELLIN, COLOMBIA</option>
                   <option value="3">CALI, COLOMBIA</option>
@@ -41,13 +43,13 @@
                   <option value="19">TEGUCIGALPA, HONDURAS</option>
                   <option value="20">MANAGUA, NICARAGUA</option>
                 </select>
-                <input type="number" placeholder="Salario" />
-                <input type="file" placeholder="HV" />
-                <input type="text" placeholder="link Video" />
+                <input type="number" name="salario" placeholder="Salario" />
+                <input type="file" name="hv" placeholder="HV" />
+                <input type="text" name="video" placeholder="link Video" />
                 <input type="text" name="usuario" placeholder="Usuario" required />
-                <input type="password" placeholder="Contraseña" />
-                <input type="text" placeholder="Email" />
-                <button class="button1">Crear</button>
+                <input type="password" name="contrasena" placeholder="Contraseña" />
+                <input type="text" name="email" placeholder="Email" />
+                <button type="submit" class="button1">Crear</button>
                 <p class="message">Registrado? <a href="index.php">Inicia Sesion</a></p>
               </form>
             </div>
@@ -56,5 +58,4 @@
             </video>
           </div>
     </body>
-    
 </html>
