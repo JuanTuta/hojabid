@@ -8,11 +8,10 @@ $connectionOptions = array(
 );
 
 // Verificar si se enviaron los datos del formulario
-// Verificar si se enviaron los datos del formulario
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Obtener los valores del formulario
-    $usuario = "JPelmamaguevo";
-    $contrasena = "mamaguevoxd";
+    $usuario = $_POST["usuario"];
+    $contrasena = $_POST["contrasena"];
 
     // Establecer conexión
     $conn = sqlsrv_connect($serverName, $connectionOptions);
@@ -41,4 +40,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
     }
 }
+?>
 
