@@ -15,9 +15,10 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
               </div>
               <form class="login-form">
-                <input type="text" placeholder="Nombre" />
-                <input type="text" placeholder="Direccion" />
-                <input type="number" placeholder="Numero" />
+                <input type="text" placeholder="NIT" />
+                <input type="text" placeholder="Rason Social" />
+                <input type="text" placeholder="Representante" />
+                <input type="number" placeholder="Telefono" />
                 <select name="ubicacion">
                   <option value="1">BOGOTA, COLOMBIA</option>
                   <option value="2">MEDELLIN, COLOMBIA</option>
@@ -40,18 +41,29 @@
                   <option value="19">TEGUCIGALPA, HONDURAS</option>
                   <option value="20">MANAGUA, NICARAGUA</option>
                 </select>
-                <input type="number" placeholder="Salario" />
-                <select name="hojadevida">
-                  <option value="1">MARIA CAMILA, 251254</option>
-                  <option value="2">ANDRES MAURICIO, 252144</option>
-                  <option value="3">DAVID GALINDO, 56666</option>
-                  <option value="4">BRAYAN ESTEBAN, 555221</option>
-                  <option value="5">JHON EDUARDO, 3336545</option>
-                  <option value="6">JUAN PSBLO TUTA, 0002144</option>
-                  <option value="7">PEDRO MOSQUERA, 878878</option>
-                  <option value="8">YAMID HERNANDO, 11145</option>
+                <select name="sede" id="sede" class="custom-select">
+                  <option value="">Selecciona una sede</option>
+                  <option value="1">Bogotá</option>
+                  <option value="2">Medellín</option>
+                  <option value="3">Cali</option>
+                  <option value="4">Barranquilla</option>
+                  <option value="5">Cartagena</option>
+                  <option value="6">Pereira</option>
+                  <option value="7">Manizales</option>
+                  <option value="8">Santa Marta</option>
+                  <option value="9">Cúcuta</option>
+                  <option value="10">Villavicencio</option>
+                  <option value="11">Armenia</option>
+                  <option value="12">Pasto</option>
+                  <option value="13">Ibagué</option>
+                  <option value="14">Neiva</option>
+                  <option value="15">Tunja</option>
+                  <option value="16">Bucaramanga</option>
+                  <option value="17">Valledupar</option>
+                  <option value="18">Popayán</option>
+                  <option value="19">Quibdó</option>
+                  <option value="20">Riohacha</option>
                 </select>
-                <input type="text" placeholder="link Video" />
                 <input type="password" placeholder="Contraseña" />
                 <input type="text" placeholder="Email" />
                 <button class="button1">Crear</button>
