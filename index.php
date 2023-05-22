@@ -16,9 +16,9 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
               </div>
               <form class="login-form">
-                <button class="button2">Usuario</button>
+                <a href="login.php"><button class="button2">Usuario</button></a>
                 
-                <button class="button2">Empresa</button>
+                <a href="login.php"><button class="button2">Empresa</button></a>
                 <p class="message">Admin? <a href="#">Click aqui</a></p>
               </form>
             </div>
