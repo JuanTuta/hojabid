@@ -1,5 +1,4 @@
 <?php
-echo "Vida F, Fsísima";
 $serverName = "serv1prub.database.windows.net";
 $connectionOptions = array(
     "Database" => "PPagina",
