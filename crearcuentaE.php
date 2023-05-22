@@ -16,6 +16,42 @@
               </div>
               <form class="login-form">
                 <input type="text" placeholder="Nombre" />
+                <input type="text" placeholder="Direccion" />
+                <input type="number" placeholder="Numero" />
+                <select name="ubicacion">
+                  <option value="1">BOGOTA, COLOMBIA</option>
+                  <option value="2">MEDELLIN, COLOMBIA</option>
+                  <option value="3">CALI, COLOMBIA</option>
+                  <option value="4">BARRANQUILLA, COLOMBIA</option>
+                  <option value="5">CARACAS, VENEZUELA</option>
+                  <option value="6">BUENOS AIRES, ARGENTINA</option>
+                  <option value="7">SANTIAGO, CHILE</option>
+                  <option value="8">QUITO, ECUADOR</option>
+                  <option value="9">LIMA, PERU</option>
+                  <option value="10">LA PAZ, BOLIVIA</option>
+                  <option value="11">ASUNCION, PARAGUAY</option>
+                  <option value="12">MONTEVIDEO, URUGUAY</option>
+                  <option value="13">MEXICO DF, MEXICO</option>
+                  <option value="14">SAN JOSE, COSTA RICA</option>
+                  <option value="15">SANTO DOMINGO, REP. DOMINICANA</option>
+                  <option value="16">PANAMA, PANAMA</option>
+                  <option value="17">GUATEMALA, GUATEMALA</option>
+                  <option value="18">SAN SALVADOR, EL SALVADOR</option>
+                  <option value="19">TEGUCIGALPA, HONDURAS</option>
+                  <option value="20">MANAGUA, NICARAGUA</option>
+                </select>
+                <input type="number" placeholder="Salario" />
+                <select name="hojadevida">
+                  <option value="1">MARIA CAMILA, 251254</option>
+                  <option value="2">ANDRES MAURICIO, 252144</option>
+                  <option value="3">DAVID GALINDO, 56666</option>
+                  <option value="4">BRAYAN ESTEBAN, 555221</option>
+                  <option value="5">JHON EDUARDO, 3336545</option>
+                  <option value="6">JUAN PSBLO TUTA, 0002144</option>
+                  <option value="7">PEDRO MOSQUERA, 878878</option>
+                  <option value="8">YAMID HERNANDO, 11145</option>
+                </select>
+                <input type="text" placeholder="link Video" />
                 <input type="password" placeholder="Contraseña" />
                 <input type="text" placeholder="Email" />
                 <button class="button1">Crear</button>
