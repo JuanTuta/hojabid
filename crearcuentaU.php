@@ -44,6 +44,7 @@
                 <input type="number" placeholder="Salario" />
                 <input type="file" placeholder="HV" />
                 <input type="text" placeholder="link Video" />
+                <input type="text" name="usuario" placeholder="Usuario" required />
                 <input type="password" placeholder="Contraseña" />
                 <input type="text" placeholder="Email" />
                 <button class="button1">Crear</button>

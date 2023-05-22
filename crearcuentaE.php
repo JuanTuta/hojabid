@@ -65,6 +65,7 @@
                   <option value="19">Quibdó</option>
                   <option value="20">Riohacha</option>
                 </select>
+                <input type="text" name="usuario" placeholder="Usuario" required />
                 <input type="password" placeholder="Contraseña" />
                 <input type="text" placeholder="Email" />
                 <button class="button1">Crear</button>
