@@ -2,9 +2,9 @@
 $serverName = "serv1prub.database.windows.net";
 $connectionOptions = array(
     "Database" => "PPagina",
-    "Authentication" => "ActiveDirectoryInteractive",
     "UID" => "est.juan.tuta@unimilitar.edu.co",
-    "PWD" => "Jp12021866*"
+    "PWD" => "Jp12021866*",
+    "Authentication" => "ActiveDirectoryPassword"
 );
 
 // Establece conexión
