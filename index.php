@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/log_in.css">
         <script>
         function redirigir() {
-          window.location.href = "login.php";
+          window.location.href = "https://emprevib.azurewebsites.net/login.php";
         }
         </script>
     </head>
