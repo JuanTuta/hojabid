@@ -4,6 +4,11 @@
         <meta charset="utf-8">
         <title>Proyecto</title>
         <link rel="stylesheet" href="css/log_in.css">
+        <script>
+        function redirigir() {
+          window.location.href = "login.php";
+        }
+        </script>
     </head>
     <body>
         <div id="container">
@@ -16,7 +21,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
               </div>
               <form class="login-form">
-                <a href="login.php"><button class="button2">Usuario</button></a>
+                <button class="button2" onclick="redirigir()">Usuario</button>
                 
                 <a href="login.php"><button class="button2">Empresa</button></a>
                 <p class="message">Admin? <a href="#">Click aqui</a></p>
@@ -29,3 +34,4 @@
     </body>
     
 </html>
+
