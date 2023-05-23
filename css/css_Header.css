@@ -1,7 +1,7 @@
 /* Barra Inicial */
 
 .barra_de_inicio {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 140px;
     top: 0;
@@ -9,6 +9,7 @@
     background: #EF3B3A;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   
   /* Boton cierra sesión */
@@ -25,6 +26,8 @@
     font-size: 24px;
     color: #FFFFFF;
     margin: 0;
+    position: absolute;
+    right: 0;
   }
   
   /* Coso gris */
