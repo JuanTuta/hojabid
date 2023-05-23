@@ -29,15 +29,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // Insertar en la tabla DESEMPLEADO
             $sqlDesempleado = "INSERT INTO DESEMPLEADO (NOMBRE, DIRECCION, TELEFONO, id_UBICACION, SALARIO, HV, VIDEO)
                                VALUES (?, ?, ?, ?, ?, ?, ?)";
-            $paramsDesempleado = array($nombre, $direccion, $telefono, $ubicacion, $salario, fopen($hv, "rb"), $video);
+            $paramsDesempleado = array($nombre, $direccion, $telefono, $ubicacion, $salario, file_get_contents($hv), $video);
             $stmtDesempleado = sqlsrv_query($conn, $sqlDesempleado, $paramsDesempleado);
             if ($stmtDesempleado === false) {
                 die(print_r(sqlsrv_errors(), true));
                 echo "Error al insertar en la tabla DESEMPLEADO";
             }
-
-            // Obtener el ID_DESEMPLEADO generado automáticamente
-            $idDesempleado = sqlsrv_fetch_array(sqlsrv_query($conn, "SELECT SCOPE_IDENTITY()"));
 
             // Insertar en la tabla usuarioSGod
             $sqlUsuario = "INSERT INTO usuarioSGod (nombreUsuario, contraseña) VALUES (?, ?)";
