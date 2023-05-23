@@ -19,22 +19,5 @@
           </div>
       </div>
     </header>
-    <body>
-      <section>
-      <div id="container">
-                <div class="form">
-                  <h1>¿Que quieres Hacer?</h1>
-                  <div class="thumbnail">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
-                  </div>
-                  <div class="thumbnail">
-                      <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
-                  </div>
-                </div>
-              </div>
-      </section>      
-    </body>
-
-
   </body>
 </html>
