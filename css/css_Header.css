@@ -15,7 +15,7 @@
   
   .logout {
     border: none;
-    width: 399px;
+    width: 140px;
     height: 100%;
     background: #EB6160;
     display: flex;
@@ -65,8 +65,9 @@
     font-weight: bold;
     font-variant: small-caps;
     color: #404040;
-    margin-left: 20px;
+    margin-left: 40px;
   }
+  
   
   
   
