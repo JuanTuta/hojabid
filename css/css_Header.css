@@ -15,8 +15,8 @@
   
   .logout {
     border: none;
-    width: 140px;
-    height: 100%;
+    width: 243px;
+    height: 140px;
     background: #EB6160;
     display: flex;
     align-items: center;
@@ -45,7 +45,6 @@
     font-family: 'Roboto';
     font-size: 24px;
     color: #404040;
-    margin: 0;
   }
   
   /* FotoEmpresa */
