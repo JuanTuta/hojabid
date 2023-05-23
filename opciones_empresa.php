@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Mi página web</title>
-    <link rel="stylesheet" href="css/css_Header.css">
     <link rel="stylesheet" href="css/opciones.css">
   </head>
   <body>
