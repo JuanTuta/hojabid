@@ -12,8 +12,8 @@
         <div class="Panel_gris">
         <p class="cerda">¡Hola, [Cerdo capitalista]!</p>
         </div>
-        <div class="logout">
-        <button class="ciérrate">Cerrar sesión</button>
+        <div>
+        <button class="logout">Cerrar sesión</button>
         </div>
     </div>
   </header>
