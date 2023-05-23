@@ -52,6 +52,9 @@ border-radius: 59px;
 
 .cierrate{
 position: relative;
+width: 213px;
+height: 42px;
+left: 50px;
 
 font-family: 'Roboto';
 font-style: normal;
