@@ -19,6 +19,7 @@ $video = $_POST['video'];
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
 
+echo $hv;
 try {
     $conn = sqlsrv_connect($serverName, $connectionOptions);
     if ($conn === false) {
