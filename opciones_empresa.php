@@ -3,7 +3,7 @@
   <head>
     <title>Mi página web</title>
     <link rel="stylesheet" href="css/css_Header.css">
-    <link rel="stylesheet" href="css/log_in.css">
+    <link rel="stylesheet" href="css/opciones.css">
   </head>
   <body>
     <?php include 'headerEmpresa.php'; ?>
