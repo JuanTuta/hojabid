@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $telefono = $_POST["numero"];
     $ubicacion = $_POST["ubicacion"];
     $salario = $_POST["salario"];
-    $hv = 0x255044462D312E330D0A;
+    $hv = $_FILES["hv"]["tmp_name"];
     $video = $_POST["video"];
     $usuario = $_POST["usuario"];
     $contrasena = $_POST["contrasena"];
