@@ -22,11 +22,8 @@
   <section>
     <body>
           <div id="container">
-              <div class="info">
-                <h1>Agencias de Empleos Bogotá</h1>
-                <span>Made with LOVE, SWEAT AND BLOOD <i class="fa fa-heart"></i></span>
-              </div>
               <div class="form">
+                <h1>Agencias de Empleos Bogotá</h1>
                 <div class="thumbnail">
                   <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
                 </div>
