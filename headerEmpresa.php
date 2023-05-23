@@ -14,7 +14,7 @@
         <p class="cerda">¡Hola, [Cerdo capitalista]!</p>
         </div>
         <div>
-        <button class="logout"> <p class="cierrate">Cerrar sesión</p></button>
+        <a class="logout">Cerrar sesión</a>
         </div>
     </div>
   </header>
