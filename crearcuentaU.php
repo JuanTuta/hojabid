@@ -16,6 +16,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
               </div>
               <form class="login-form" action="procesar_registro.php" method="POST">
+                <input type="numero" name="id" placeholder="ID" />
                 <input type="text" name="nombre" placeholder="Nombre" />
                 <input type="text" name="direccion" placeholder="Direccion" />
                 <input type="number" name="numero" placeholder="Numero" />
