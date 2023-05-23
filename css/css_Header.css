@@ -53,14 +53,15 @@
     width: 80px;
     height: auto;
     border-radius: 50%;
-    margin-left: 20px;
+    margin-left: 50px;
   }
 
   .Imagen_gigaChad{
     width: 80px;
-    height: auto;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
+    margin-left: 50px;
   }
   
   /* Hola, cerdo capitalista */
