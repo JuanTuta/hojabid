@@ -13,32 +13,39 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $usuario = $_POST["usuario"];
     $contrasena = $_POST["contrasena"];
 
-    // Establecer conexión
-    $conn = sqlsrv_connect($serverName, $connectionOptions);
-    if ($conn === false) {
-        die(print_r(sqlsrv_errors(), true));
-        echo "Error de conexión";
-    } else {
-        // Consulta SQL para insertar los datos en la tabla
-        $sql = "INSERT INTO usuarioSGod (nombreUsuario, contraseña) VALUES (?, ?)";
-        
-        // Preparar la consulta
-        $stmt = sqlsrv_prepare($conn, $sql, array(&$usuario, &$contrasena));
-        
-        // Verificar si la preparación de la consulta fue exitosa
-        if ($stmt === false) {
+    try {
+        $conn = sqlsrv_connect($serverName, $connectionOptions);
+        if ($conn === false) {
             die(print_r(sqlsrv_errors(), true));
-            echo "Error en la preparación de la consulta";
+            echo "Error de conexión";
         } else {
-            // Ejecutar la consulta
-            if (sqlsrv_execute($stmt) === false) {
+            // Consultar el usuario y la contraseña en la tabla usuarioSGod
+            $sql = "SELECT * FROM usuarioSGod WHERE nombreUsuario = ? AND contraseña = ?";
+            $params = array($usuario, $contrasena);
+            $stmt = sqlsrv_query($conn, $sql, $params);
+            if ($stmt === false) {
                 die(print_r(sqlsrv_errors(), true));
-                echo "Error al ejecutar la consulta";
-            } else {
-                echo "Datos insertados correctamente";
+                echo "Error al consultar la base de datos";
             }
+
+            // Verificar si se encontró una coincidencia de usuario y contraseña
+            if (sqlsrv_has_rows($stmt)) {
+                // Iniciar sesión o redirigir a la página de inicio
+                session_start();
+                $_SESSION["usuario"] = $usuario;
+                header("Location: empus.php");
+                exit();
+            } else {
+                echo "Usuario y/o contraseña incorrectos";
+            }
+
+            // Cerrar la conexión a la base de datos
+            sqlsrv_close($conn);
         }
+    } catch (Exception $e) {
+        echo "Error: " . $e->getMessage();
     }
 }
 ?>
+
 

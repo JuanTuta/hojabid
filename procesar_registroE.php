@@ -10,13 +10,12 @@ $connectionOptions = array(
 // Verificar si se enviaron los datos del formulario
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Obtener los valores del formulario
-    $nombre = $_POST["nombre"];
-    $direccion = $_POST["direccion"];
-    $telefono = $_POST["numero"];
+    $nit = $_POST["nit"];
+    $razon_social = $_POST["razon_social"];
+    $representante = $_POST["representante"];
+    $telefono = $_POST["telefono"];
     $ubicacion = $_POST["ubicacion"];
-    $salario = $_POST["salario"];
-    $hv = $_FILES["hv"]["tmp_name"];
-    $video = $_POST["video"];
+    $sede = $_POST["sede"];
     $usuario = $_POST["usuario"];
     $contrasena = $_POST["contrasena"];
 
@@ -26,14 +25,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             die(print_r(sqlsrv_errors(), true));
             echo "Error de conexión";
         } else {
-            // Insertar en la tabla DESEMPLEADO
-            $sqlDesempleado = "INSERT INTO DESEMPLEADO (NOMBRE, DIRECCION, TELEFONO, id_UBICACION, SALARIO, HV, VIDEO)
-                   VALUES (?, ?, ?, ?, ?, CONVERT(varbinary(max), ?), ?)";
-            $paramsDesempleado = array($nombre, $direccion, $telefono, $ubicacion, $salario, file_get_contents($hv), $video);
-            $stmtDesempleado = sqlsrv_query($conn, $sqlDesempleado, $paramsDesempleado);
-            if ($stmtDesempleado === false) {
+            // Insertar en la tabla Empresa
+            $sqlEmpresa = "INSERT INTO Empresa (NIT, RAZON_SOCIAL, REPRESENTANTE, TELEFONO, id_UBICACION, id_SEDE)
+                   VALUES (?, ?, ?, ?, ?, ?)";
+            $paramsEmpresa = array($nit, $razon_social, $representante, $telefono, $ubicacion, $sede);
+            $stmtEmpresa = sqlsrv_query($conn, $sqlEmpresa, $paramsEmpresa);
+            if ($stmtEmpresa === false) {
                 die(print_r(sqlsrv_errors(), true));
-                echo "Error al insertar en la tabla DESEMPLEADO";
+                echo "Error al insertar en la tabla Empresa";
             }
 
             // Insertar en la tabla usuarioSGod
@@ -55,8 +54,3 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
-
-
-
-
-

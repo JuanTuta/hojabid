@@ -15,13 +15,11 @@
               <div class="thumbnail">
                 <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
               </div>
-              <form class="login-form" action="procesar_registro.php" method="POST">
-                <input type="numero" name="id" placeholder="ID" />
+              <form class="login-form" enctype="multipart/form-data" action="procesar_registro.php" method="POST">
                 <input type="text" name="nombre" placeholder="Nombre" />
                 <input type="text" name="direccion" placeholder="Direccion" />
                 <input type="number" name="numero" placeholder="Numero" />
                 <select name="ubicacion" class="custom-select">
-                  <option value="">Selecciona una Ubicacion</option>
                   <option value="">Selecciona una Ubicacion</option>
                   <option value="1">BOGOTA, COLOMBIA</option>
                   <option value="2">MEDELLIN, COLOMBIA</option>
@@ -45,7 +43,7 @@
                   <option value="20">MANAGUA, NICARAGUA</option>
                 </select>
                 <input type="number" name="salario" placeholder="Salario" />
-                <input type="number" name="hv" placeholder="HV" />
+                <input type="file" name="hv" placeholder="HV" />
                 <input type="text" name="video" placeholder="link Video" />
                 <input type="text" name="usuario" placeholder="Usuario" required />
                 <input type="password" name="contrasena" placeholder="Contraseña" />
@@ -54,9 +52,6 @@
                 <p class="message">Registrado? <a href="index.php">Inicia Sesion</a></p>
               </form>
             </div>
-            <video id="video" autoplay loop poster="polina.jpg">
-              <source src="http://andytran.me/A%20peaceful%20nature%20timelapse%20video.mp4" type="video/mp4" />
-            </video>
           </div>
     </body>
 </html>

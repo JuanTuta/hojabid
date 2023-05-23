@@ -14,13 +14,13 @@
               <div class="thumbnail">
                 <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
               </div>
-              <form class="login-form">
-                <input type="text" placeholder="NIT" />
-                <input type="text" placeholder="Rason Social" />
-                <input type="text" placeholder="Representante" />
-                <input type="number" placeholder="Telefono" />
-                <select name="ubicacion" class="custom-select">
-                <option value="">Selecciona una Ubicacion</option>
+              <form class="login-form" method="POST" action="procesar_registroE.php">
+                <input type="text" name="nit" placeholder="NIT" required />
+                <input type="text" name="razon_social" placeholder="Razón Social" required />
+                <input type="text" name="representante" placeholder="Representante" required />
+                <input type="number" name="telefono" placeholder="Teléfono" required />
+                <select name="ubicacion" class="custom-select" required>
+                  <option value="">Selecciona una Ubicación</option>
                   <option value="1">BOGOTA, COLOMBIA</option>
                   <option value="2">MEDELLIN, COLOMBIA</option>
                   <option value="3">CALI, COLOMBIA</option>
@@ -42,8 +42,8 @@
                   <option value="19">TEGUCIGALPA, HONDURAS</option>
                   <option value="20">MANAGUA, NICARAGUA</option>
                 </select>
-                <select name="sede" id="sede" class="custom-select">
-                  <option value="">Selecciona una sede</option>
+                <select name="sede" id="sede" class="custom-select" required>
+                  <option value="">Selecciona una Sede</option>
                   <option value="1">Bogotá</option>
                   <option value="2">Medellín</option>
                   <option value="3">Cali</option>
@@ -66,16 +66,12 @@
                   <option value="20">Riohacha</option>
                 </select>
                 <input type="text" name="usuario" placeholder="Usuario" required />
-                <input type="password" placeholder="Contraseña" />
-                <input type="text" placeholder="Email" />
-                <button class="button1">Crear</button>
-                <p class="message">Registrado? <a href="index.php">Inicia Sesion</a></p>
+                <input type="password" name="contrasena" placeholder="Contraseña" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <button type="submit" class="button1">Crear</button>
+                <p class="message">Registrado? <a href="index.php">Inicia Sesión</a></p>
               </form>
             </div>
-            <video id="video" autoplay loop poster="polina.jpg">
-              <source src="http://andytran.me/A%20peaceful%20nature%20timelapse%20video.mp4" type="video/mp4" />
-            </video>
           </div>
     </body>
-    
 </html>
