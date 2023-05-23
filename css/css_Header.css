@@ -39,8 +39,8 @@ border-radius: 62px;
 
 .Imagen {
 position: absolute;
-width: 118px;
-height: 118px;
+width: 30px;
+height: auto;
 left: 53px;
 top: 11px;
 
