@@ -1,7 +1,7 @@
 /* Barra Inicial */
 
 .barra_de_inicio{
-position: absolute;
+position: relative;
 width: 1920px;
 height: 140px;
 left: 0px;
@@ -13,7 +13,7 @@ background: #EF3B3A;
 /* Boton cierra cesion */
 
 .logout {
-position: absolute;
+position: relative;
 width: 399px;
 height: 149px;
 left: 1521px;
@@ -25,7 +25,7 @@ background: #EB6160;
 /* Coso gris */
 
 .Panel_gris{
-position: absolute;
+position: relative;
 width: 1206px;
 height: 69px;
 left: 252px;
@@ -38,7 +38,7 @@ border-radius: 62px;
 /* FotoEmpresa */
 
 .Imagen {
-position: absolute;
+position: relative;
 width: 30px;
 height: auto;
 left: 53px;
@@ -51,7 +51,7 @@ border-radius: 59px;
 /* Cerrar sesión */
 
 .cierrate{
-position: absolute;
+position: relative;
 width: 213px;
 height: 42px;
 left: 1613px;
@@ -74,7 +74,7 @@ color: #FFFFFF;
 /* Hola, cerdo capitalista */
 
 .cerda{
-position: absolute;
+position: relative;
 width: 518px;
 height: 42px;
 left: 276px;
