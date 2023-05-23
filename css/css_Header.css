@@ -1,7 +1,7 @@
 /* Barra Inicial */
 
 .barra_de_inicio{
-position: relative;
+position: absolute;
 width: 1920px;
 height: 140px;
 left: 0px;
@@ -25,7 +25,7 @@ background: #EB6160;
 /* Coso gris */
 
 .Panel_gris{
-position: relative;
+position: absolute;
 width: 1206px;
 height: 69px;
 left: 252px;
