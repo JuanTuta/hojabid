@@ -21,7 +21,6 @@
                 <input type="number" name="numero" placeholder="Numero" />
                 <select name="ubicacion" class="custom-select">
                   <option value="">Selecciona una Ubicacion</option>
-                  <option value="">Selecciona una Ubicacion</option>
                   <option value="1">BOGOTA, COLOMBIA</option>
                   <option value="2">MEDELLIN, COLOMBIA</option>
                   <option value="3">CALI, COLOMBIA</option>
