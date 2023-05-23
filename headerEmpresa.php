@@ -7,8 +7,7 @@
 <body>
   <header>
     <div class="barra_de_inicio">
-        <div>
-        <img class="Imagen" src="imgs/Empregod.png" alt="Logo de la empresa">
+        <div class="Imagen">
         </div>
         <div class="Panel_gris">
         <p class="cerda">¡Hola, [Cerdo capitalista]!</p>
