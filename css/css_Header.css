@@ -32,7 +32,7 @@
   /* Coso gris */
   
   .Panel_gris {
-    width: 100%;
+    width: 75%;
     height: 69px;
     background: #D9D9D9;
     border-radius: 62px;
@@ -51,7 +51,7 @@
   /* FotoEmpresa */
   
   .Imagen {
-    width: 30px;
+    width: 80px;
     height: auto;
     border-radius: 50%;
   }
