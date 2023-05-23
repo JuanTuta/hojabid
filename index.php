@@ -23,9 +23,6 @@
                 <p class="message">Olvidó su contraseña? <a href="#">Click aquí</a></p>
             </form>
         </div>
-        <video id="video" autoplay loop poster="polina.jpg">
-            <source src="http://andytran.me/A%20peaceful%20nature%20timelapse%20video.mp4" type="video/mp4" />
-        </video>
     </div>
 </body>
 </html>
