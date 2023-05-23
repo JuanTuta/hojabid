@@ -8,16 +8,18 @@ $connectionOptions = array(
 );
 
 // Obtener los valores enviados por el formulario
+$id = $_POST['id'];
 $nombre = $_POST['nombre'];
 $direccion = $_POST['direccion'];
 $telefono = $_POST['numero'];
 $ubicacion = $_POST['ubicacion'];
 $salario = $_POST['salario'];
-$hv = $_FILES['hv']['name'];
+$hv = $_POST['hv'];
 $video = $_POST['video'];
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
 
+echo $hv;
 try {
     $conn = sqlsrv_connect($serverName, $connectionOptions);
     if ($conn === false) {
@@ -27,7 +29,7 @@ try {
     // Insertar en la tabla DESEMPLEADO
     $sqlDesempleado = "INSERT INTO DESEMPLEADO (id_DESEMPLEADO, NOMBRE, DIRECCION, TELEFONO, id_UBICACION, SALARIO, id_HV, VIDEO)
                        VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-    $paramsDesempleado = array($idDesempleado[8], $nombre, $direccion, $telefono, $ubicacion, $salario, $hv, $video);
+    $paramsDesempleado = array($id, $nombre, $direccion, $telefono, $ubicacion, $salario, $hv, $video);
     $stmtDesempleado = sqlsrv_query($conn, $sqlDesempleado, $paramsDesempleado);
     if ($stmtDesempleado === false) {
         die(print_r(sqlsrv_errors(), true));
