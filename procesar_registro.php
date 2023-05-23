@@ -48,7 +48,7 @@ try {
     sqlsrv_close($conn);
 
     // Redireccionar a una página de éxito o mostrar un mensaje de éxito
-    header("Location: formulario_exitoso.php");
+    header("funco");
     exit();
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
