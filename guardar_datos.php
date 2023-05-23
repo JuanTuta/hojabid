@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 // Iniciar sesión o redirigir a la página de inicio
                 session_start();
                 $_SESSION["usuario"] = $usuario;
-                header("Location: inicio.php");
+                header("Location: empus.php");
                 exit();
             } else {
                 echo "Usuario y/o contraseña incorrectos";
