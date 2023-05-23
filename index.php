@@ -9,7 +9,7 @@
     <div id="container">
         <div class="info">
             <h1>Agencias de Empleos Bogotá</h1>
-            <span>Made with LOVE <i class="fa fa-heart"></i></span>
+            <span>Made with BLOOD, SWEAT and TEARS<i class="fa fa-heart"></i></span>
         </div>
         <div class="form">
             <div class="thumbnail">

@@ -15,7 +15,7 @@
           <p class="cerda">¡Hola, ADMINAZOOO!!!</p>
           </div>
           <div>
-          <a class="logout" href="xd">Cerrar sesión</a>
+          <a class="logout" href="index.php">Cerrar sesión</a>
           </div>
       </div>
     </header>
