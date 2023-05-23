@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         } else {
             // Insertar en la tabla DESEMPLEADO
             $sqlDesempleado = "INSERT INTO DESEMPLEADO (NOMBRE, DIRECCION, TELEFONO, id_UBICACION, SALARIO, HV, VIDEO)
-                               VALUES (?, ?, ?, ?, ?, ?, ?)";
+                   VALUES (?, ?, ?, ?, ?, CONVERT(varbinary(max), ?), ?)";
             $paramsDesempleado = array($nombre, $direccion, $telefono, $ubicacion, $salario, file_get_contents($hv), $video);
             $stmtDesempleado = sqlsrv_query($conn, $sqlDesempleado, $paramsDesempleado);
             if ($stmtDesempleado === false) {
