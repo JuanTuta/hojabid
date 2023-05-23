@@ -1,92 +1,59 @@
-/* Barra Inicial */
-
-.barra_de_inicio{
-position: absolute;
-width: 1920px;
-height: 140px;
-left: 0px;
-top: 0px;
-
-background: #EF3B3A;
-
-}
-/* Boton cierra cesion */
-
-.logout {
-position: relative;
-width: 399px;
-height: 149px;
-left: 1521px;
-top: -9px;
-
-background: #EB6160;
-}
-
-/* Coso gris */
-
-.Panel_gris{
-position: absolute;
-width: 1206px;
-height: 69px;
-left: 252px;
-top: 36px;
-
-background: #D9D9D9;
-border-radius: 62px;
-}
-
-/* FotoEmpresa */
-
-.Imagen {
-position: absolute;
-width: 30px;
-height: auto;
-left: 53px;
-top: 11px;
-
-background: url(imgs/Empregod.png);
-border-radius: 59px;
-
-}
-/* Cerrar sesión */
-
-.cierrate{
-position: relative;
-width: 213px;
-height: 42px;
-left: 50px;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 42px;
-display: flex;
-align-items: center;
-text-align: center;
-text-decoration-line: underline;
-
-color: #FFFFFF;
-
-}
-
-/* Hola, cerdo capitalista */
-
-.cerda{
-position: relative;
-width: 518px;
-height: 42px;
-left: 50px;
-top: -15px;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 42px;
-display: flex;
-align-items: center;
-font-variant: small-caps;
-
-color: #404040;
-}
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #f2f2f2;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .barra_de_inicio {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Panel_gris {
+    background-color: #808080;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+  
+  .cerda {
+    color: #222;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .logout {
+    background-color: #eb6160;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  .cierrate {
+    color: white;
+    margin: 0;
+  }
+  
+  /* Estilos adicionales para el diseño */
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
