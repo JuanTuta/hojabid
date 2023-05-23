@@ -45,7 +45,7 @@
                   <option value="20">MANAGUA, NICARAGUA</option>
                 </select>
                 <input type="number" name="salario" placeholder="Salario" />
-                <input type="file" name="hv" placeholder="HV" />
+                <input type="number" name="hv" placeholder="HV" />
                 <input type="text" name="video" placeholder="link Video" />
                 <input type="text" name="usuario" placeholder="Usuario" required />
                 <input type="password" name="contrasena" placeholder="Contraseña" />
