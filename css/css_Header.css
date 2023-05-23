@@ -44,7 +44,7 @@ height: auto;
 left: 53px;
 top: 11px;
 
-background: url(Empregod.png);
+background: url(imgs/Empregod.png);
 border-radius: 59px;
 
 }
@@ -76,8 +76,8 @@ color: #FFFFFF;
 position: relative;
 width: 518px;
 height: 42px;
-left: 100px;
-top: -20px;
+left: 50px;
+top: -10px;
 
 font-family: 'Roboto';
 font-style: normal;
