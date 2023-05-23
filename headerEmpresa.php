@@ -23,7 +23,7 @@
     <body>
           <div id="container">
               <div class="form">
-                <h1>Agencias de Empleos Bogotá</h1>
+                <h1>¿Que quieres Hacer?</h1>
                 <div class="thumbnail">
                   <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
                 </div>
