@@ -9,7 +9,7 @@
     <header>
       <div class="barra_de_inicio">
           <div>
-          <img  class="Imagen" src="imgs/admin.jpg" alt="Ícono distintivo empresa">
+          <img  class="Imagen_gigaChad" src="imgs/admin.jpg" alt="Ícono distintivo empresa">
           </div>
           <div class="Panel_gris">
           <p class="cerda">¡Hola, ADMINAZOOO!!!</p>

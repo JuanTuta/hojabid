@@ -55,6 +55,13 @@
     border-radius: 50%;
     margin-left: 20px;
   }
+
+  .Imagen_gigaChad{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
   
   /* Hola, cerdo capitalista */
   
