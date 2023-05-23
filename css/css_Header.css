@@ -1,7 +1,7 @@
 /* Barra Inicial */
 
 .barra_de_inicio {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 140px;
     top: 0;
@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 20px; /* Añadido un espacio de padding a la derecha */
   }
   
   /* Boton cierra sesión */
@@ -26,8 +27,7 @@
     font-size: 24px;
     color: #FFFFFF;
     margin: 0;
-    position: absolute;
-    right: 0;
+    white-space: nowrap; /* Evita el salto de línea del texto en el botón */
   }
   
   /* Coso gris */
