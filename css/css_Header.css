@@ -15,13 +15,12 @@
   
   .logout {
     border: none;
-
     width: 399px;
     height: 100%;
     background: #EB6160;
     display: flex;
     align-items: center;
-
+    justify-content: center;
     font-family: 'Roboto';
     font-size: 24px;
     color: #FFFFFF;
@@ -39,6 +38,7 @@
     align-items: center;
     justify-content: flex-start;
     margin-left: 20px;
+    margin-right: 20px;
   }
   
   .Panel_gris p {
@@ -54,7 +54,7 @@
     width: 80px;
     height: auto;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-left: 20px;
   }
   
   /* Hola, cerdo capitalista */
@@ -65,7 +65,9 @@
     font-weight: bold;
     font-variant: small-caps;
     color: #404040;
+    margin-left: 20px;
   }
+  
   
   
 
