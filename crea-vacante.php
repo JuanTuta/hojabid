@@ -12,14 +12,14 @@
             </div>
             <div class="form">
               <div class="thumbnail">
-                <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
+                <img src="imgs/vacante.png" />
               </div>
-              <form class="login-form" method="POST" action="procesar_registroE.php">
+              <form class="login-form" method="POST" action="creavaca.php">
                 <input type="date" name="fini" placeholder="Fecha de inicio" required />
                 <input type="date" name="fin" placeholder="Fecha de fin" required />
                 <input type="text" name="cargo" placeholder="Cargo" required />
                 <input type="text" name="salario" placeholder="Salario" required />
-                <input type="text" name="pregrado" placeholder="Pregrado Sí o NO" required />
+                <input type="text" name="pregrado" placeholder="Pregrado Sí o No" required />
                 <input type="text" name="descrip" placeholder="Descripción" required />
                 <input type="text" name="reangoe" placeholder="Rango Edad" required />
                 <select name="ubicacion" class="custom-select" required>
