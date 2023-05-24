@@ -45,9 +45,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     echo "Rol desconocido";
                 }
             } else {
-                // Mostrar mensaje de alerta con JavaScript
+                // Mostrar mensaje de alerta y redirigir nuevamente a index.php
                 echo '<script>alert("Usuario y/o contraseña incorrectos");</script>';
                 header("Location: index.php");
+                exit();
             }
 
             // Cerrar la conexión a la base de datos
@@ -58,6 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
+
 
 
 
