@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+// Verificar si la variable de sesión existe y tiene un valor
+if (isset($_SESSION["usuario"])) {
+    $nombreUsuario = $_SESSION["usuario"];
+} else {
+    // Si la variable de sesión no existe o no tiene valor, redirigir a index.php
+    echo '<script>alert("Usuario no existe"); window.location.href = "index.php";</script>';
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,7 +25,7 @@
           <img  class="Imagen" src="imgs/Empregod.png" alt="Ícono distintivo empresa">
           </div>
           <div class="Panel_gris">
-          <p class="cerda">¡Hola, [Cerdo capitalista]!</p>
+          <p class="cerda">¡Hola, <?php echo $nombreUsuario; ?>!</p>
           </div>
           <div>
           <a class="logout" href="index.php">Cerrar sesión</a>
