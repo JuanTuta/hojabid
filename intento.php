@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+echo "No se encontraron registros en la tabla DESEMPLEADO.";
 $serverName = "serv1prub.database.windows.net";
 $connectionOptions = array(
     "Database" => "PPagina",
@@ -11,6 +11,7 @@ $connectionOptions = array(
 
 // Establecer la conexión con el servidor y realizar la consulta
 try {
+    echo "No se encontraron registros en la tabla DESEMPLEADO.";
     $conn = sqlsrv_connect($serverName, $connectionOptions);
     
     if ($conn === false) {
