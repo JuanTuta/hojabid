@@ -7,15 +7,16 @@
   <body>
     <?php include 'headerEmpresa.php'; ?>
     <div id="container">
-      <div class="form">
+      <div class="Blancou">
         <h1>¿Qué quieres hacer?</h1>
-        <div class="thumbnail">
-          <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
+        <div class="BOTONAZO">
+          <img src="imgs/cv.png" class="imagen1" />
         </div>
-        <div class="thumbnail">
-          <img src="https://cdn-icons-png.flaticon.com/512/4832/4832900.png" />
+        <div class="BOTONAZO2">
+          <img src="imgs/vacante.png" class="imagen2"/>
         </div>
       </div>
+      <img src="imgs/rama(1).png" class="imTroll"/>
     </div>
   </body>
 </html>
