@@ -36,6 +36,9 @@
     height: 10%;
     background: #F2F2F2;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   /* HV disponibles-postulantes o lo que SEA */
@@ -58,17 +61,11 @@
   /* nombre-ubicacion-1 */
   .Encabezadín-1 {
     position: relative;
-    width: 80%;
-    height: 70px;
-    margin: 0 auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 47px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #404040;
   }
   
@@ -110,22 +107,19 @@
     height: 10%;
     background: #F2F2F2;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   /* nombre-ubicacion-2 */
   .Encabezadín-2 {
     position: relative;
-    width: 80%;
-    height: 70px;
-    margin: 0 auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 47px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #404040;
   }
   
