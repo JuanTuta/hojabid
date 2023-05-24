@@ -22,7 +22,8 @@ if (isset($_GET['id'])) {
         $sql = "SELECT HV FROM DESEMPLEADO WHERE NOMBRE = ?";
         $params = array(&$hvFileName);
         $result = sqlsrv_query($conn, $sql, $params);
-
+        echo "No se encontró el archivo solicitado.";
+        
         if ($result === false) {
             die(print_r(sqlsrv_errors(), true));
         }
