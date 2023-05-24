@@ -1,6 +1,6 @@
 <?php
 session_start();
-echo "No se encontraron registros en la tabla DESEMPLEADO1.";
+
 $serverName = "serv1prub.database.windows.net";
 $connectionOptions = array(
     "Database" => "PPagina",
