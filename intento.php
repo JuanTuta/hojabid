@@ -26,33 +26,37 @@ try {
         die(print_r(sqlsrv_errors(), true));
     }
 
-    if (sqlsrv_has_rows($result)) {
-        echo "No se encontraron registros en la tabla DESEMPLEADO4.";
-        while ($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC())) {
-            echo "No se encontraron registros en la tabla DESEMPLEADO5.";
-            $nombreDesempleado = $row["DESEMPLEADO"];
-            $ubicacionId = $row["ID_UBICACION"];
+    // Consulta para obtener los datos de los desempleados
+    $sqlDesempleados = "SELECT DESEMPLEADO, ID_UBICACION FROM DESEMPLEADO";
+    $stmtDesempleados = sqlsrv_prepare($conn, $sqlDesempleados);
 
-            // Obtener el nombre de la ubicación de la tabla UBICACION
-            $sqlUbicacion = "SELECT CIUDAD FROM UBICACION WHERE ID_UBICACION = $ubicacionId";
-            echo "No se encontraron registros en la tabla DESEMPLEADO6.";
-            $resultUbicacion = sqlsrv_query($conn, $sqlUbicacion);
-            echo "No se encontraron registros en la tabla DESEMPLEADO7.";
-            $rowUbicacion = sqlsrv_fetch_array($resultUbicacion, sqlsrv_fetch_assoc());
-            echo "No se encontraron registros en la tabla DESEMPLEADO8.";
-            $nombreUbicacion = $rowUbicacion["CIUDAD"];
+    if (sqlsrv_execute($stmtDesempleados)) {
+        while ($rowDesempleado = sqlsrv_fetch_array($stmtDesempleados, SQLSRV_FETCH_ASSOC)) {
+            $nombreDesempleado = $rowDesempleado["DESEMPLEADO"];
+            $ubicacionId = $rowDesempleado["ID_UBICACION"];
 
-            
-            // Generar el div con los datos obtenidos
-            echo '<div class="Contenedor-HV-2">
-                    <div class="mini-blanco-2">
-                        <h3 class="Encabezadín-2">' . $nombreDesempleado . ' (' . $nombreUbicacion . ')</h3>
-                    </div>
-                    <a class="archivoHV-2">Descargala ahora</a>
-                </div>';
+            // Consulta para obtener el nombre de la ubicación
+            $sqlUbicacion = "SELECT CIUDAD FROM UBICACION WHERE ID_UBICACION = ?";
+            $stmtUbicacion = sqlsrv_prepare($conn, $sqlUbicacion, array(&$ubicacionId));
+
+            if (sqlsrv_execute($stmtUbicacion)) {
+                if ($rowUbicacion = sqlsrv_fetch_array($stmtUbicacion, SQLSRV_FETCH_ASSOC)) {
+                    $nombreUbicacion = $rowUbicacion["CIUDAD"];
+
+                    // Generar el div con los datos obtenidos
+                    echo '<div class="Contenedor-HV-2">
+                            <div class="mini-blanco-2">
+                                <h3 class="Encabezadín-2">' . $nombreDesempleado . ' (' . $nombreUbicacion . ')</h3>
+                            </div>
+                            <a class="archivoHV-2">Descargala ahora</a>
+                        </div>';
+                }
+            } else {
+                echo "Error al ejecutar la consulta de ubicación: " . print_r(sqlsrv_errors(), true);
+            }
         }
     } else {
-        echo "No se encontraron registros en la tabla DESEMPLEADO.";
+        echo "Error al ejecutar la consulta de desempleados: " . print_r(sqlsrv_errors(), true);
     }
 
     sqlsrv_free_stmt($result);
