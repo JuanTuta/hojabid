@@ -1,4 +1,15 @@
 
+<?php
+
+// Verificar si la variable de sesión existe y tiene un valor
+if (isset($_SESSION["usuario"])) {
+    $nombreUsuario = $_SESSION["usuario"];
+} else {
+    // Si la variable de sesión no existe o no tiene valor, redirigir a index.php
+    header("Location: index.php");
+    exit();
+}
+?>
 
 <!DOCTYPE html>
 <html>
