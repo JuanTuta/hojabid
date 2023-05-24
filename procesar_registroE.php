@@ -49,7 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // Cerrar la conexión a la base de datos
             sqlsrv_close($conn);
 
-            echo "Datos insertados correctamente";
+            echo '<script>alert("Cuenta Creada"); window.location.href = "index.php";</script>';
+            exit();
         }
     } catch (Exception $e) {
         echo "Error: " . $e->getMessage();
