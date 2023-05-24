@@ -45,7 +45,6 @@ if (isset($_GET['id'])) {
             // Cerrar el flujo de datos
             sqlsrv_free_stmt($result);
             sqlsrv_close($conn);
-            sqlsrv_close($hvData);
             exit();
         } else {
             echo "No se encontró el archivo solicitado.";
@@ -57,6 +56,7 @@ if (isset($_GET['id'])) {
     echo "No se proporcionó un nombre de archivo válido.";
 }
 ?>
+
 
 
 
