@@ -3,19 +3,22 @@
   position: absolute;
   width: 653.08px;
   height: 659px;
-  left: 629px;
-  top: 271px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background: #FFFFFF;
   border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 /* Boton 1 */
 .BOTONAZO {
-  position: absolute;
   width: 233px;
   height: 272px;
-  left: 668px;
-  top: 529px;
   background: #EF3B3A;
   border-radius: 48px;
   display: flex;
@@ -25,11 +28,8 @@
 
 /* Boton 2 */
 .BOTONAZO2 {
-  position: absolute;
   width: 233px;
   height: 272px;
-  left: 1007px;
-  top: 529px;
   background: #EF3B3A;
   border-radius: 48px;
   display: flex;
@@ -39,18 +39,14 @@
 
 /* cv 1 */
 .imagen1 {
-
   width: 156px;
   height: 156px;
-
 }
 
 /* subirVacante */
 .imagen2 {
-
   width: 163px;
   height: 163px;
-
 }
 
 /* Imagen trol */
@@ -64,19 +60,12 @@
 
 /* ¿Qué quieres hacer? */
 h1 {
-  position: absolute;
-  width: 559px;
-  height: 70px;
-  left: 681px;
-  top: 316px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
   line-height: 68px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   color: #404040;
+  margin-top: 20px;
 }

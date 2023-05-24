@@ -13,10 +13,11 @@
           <img src="imgs/cv.png" class="imagen1" />
         </div>
         <div class="BOTONAZO2">
-          <img src="imgs/vacante.png" class="imagen2"/>
+          <img src="imgs/vacante.png" class="imagen2" />
         </div>
       </div>
-      <img src="imgs/rama(1).png" class="imTroll"/>
+      <img src="imgs/rama(1).png" class="imTroll" />
     </div>
   </body>
 </html>
+
