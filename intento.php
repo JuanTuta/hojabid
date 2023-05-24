@@ -11,7 +11,6 @@ $connectionOptions = array(
 
 // Establecer la conexión con el servidor y realizar la consulta
 try {
-    echo "No se encontraron registros en la tabla DESEMPLEADO2.";
     $conn = sqlsrv_connect($serverName, $connectionOptions);
     
     if ($conn === false) {
@@ -21,7 +20,6 @@ try {
     $sql = "SELECT * FROM DESEMPLEADO";
     $result = sqlsrv_query($conn, $sql);
 
-    echo "No se encontraron registros en la tabla DESEMPLEADO3.";
     if ($result === false) {
         die(print_r(sqlsrv_errors(), true));
     }
