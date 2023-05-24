@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             die(print_r(sqlsrv_errors(), true));
             echo "Error de conexión";
         } else {
-            // Consultar el usuario y la contraseña en la tabla usuarioSGod
+            // Consultar el usuario, la contraseña y el rol en la tabla usuarioSGod
             $sql = "SELECT * FROM usuarioSGod WHERE nombreUsuario = ? AND contraseña = ?";
             $params = array($usuario, $contrasena);
             $stmt = sqlsrv_query($conn, $sql, $params);
@@ -30,11 +30,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             // Verificar si se encontró una coincidencia de usuario y contraseña
             if (sqlsrv_has_rows($stmt)) {
-                // Iniciar sesión o redirigir a la página de inicio
-                session_start();
-                $_SESSION["usuario"] = $usuario;
-                header("Location: empus.php");
-                exit();
+                // Obtener el rol del usuario
+                $row = sqlsrv_fetch_array($stmt);
+                $rol = $row["rol"];
+
+                // Redirigir según el rol del usuario
+                if ($rol === "usuario") {
+                    header("Location: crearcuentaU.php");
+                    exit();
+                } elseif ($rol === "empresa") {
+                    header("Location: crearcuentaE.php");
+                    exit();
+                } else {
+                    echo "Rol desconocido";
+                }
             } else {
                 echo "Usuario y/o contraseña incorrectos";
             }
@@ -47,5 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
+
 
 
