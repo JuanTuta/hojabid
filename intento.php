@@ -28,7 +28,7 @@ try {
 
     if (sqlsrv_has_rows($result)) {
         echo "No se encontraron registros en la tabla DESEMPLEADO4.";
-        while ($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
+        while ($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC())) {
             echo "No se encontraron registros en la tabla DESEMPLEADO5.";
             $nombreDesempleado = $row["DESEMPLEADO"];
             $ubicacionId = $row["ID_UBICACION"];
@@ -38,7 +38,7 @@ try {
             echo "No se encontraron registros en la tabla DESEMPLEADO6.";
             $resultUbicacion = sqlsrv_query($conn, $sqlUbicacion);
             echo "No se encontraron registros en la tabla DESEMPLEADO7.";
-            $rowUbicacion = sqlsrv_fetch_array($resultUbicacion, SQLSRV_FETCH_ASSOC | SQLSRV_FETCH_NUMERIC);
+            $rowUbicacion = sqlsrv_fetch_array($resultUbicacion, sqlsrv_fetch_assoc());
             echo "No se encontraron registros en la tabla DESEMPLEADO8.";
             $nombreUbicacion = $rowUbicacion["CIUDAD"];
 
