@@ -1,35 +1,35 @@
-/* Contenedor-rojo */
-.container-rojo {
-    position: relative;
+/* Estilos generales */
+body {
+    background: #F2F2F2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor-rojo */
+  .container-rojo {
+    position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     background: #EF3B3A;
     border-radius: 24px;
-    padding: 60px 0;
   }
   
   /* Coso-blanco */
   .container-blanco {
-    position: relative;
+    position: absolute;
     width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    height: 90%;
+    left: 5%;
+    top: 5%;
     background: #FFFFFF;
     border-radius: 24px;
-    padding: 40px;
-  }
-  
-  /* contenedorHV-1 y mini-blanco */
-  .Contenedor-HV,
-  .mini-blanco {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 15px;
+    justify-content: center;
   }
   
-  /* HV disponibles-postulantes o lo que SEA */
+  /* HV disponibles */
   h1 {
     font-family: 'Roboto';
     font-style: normal;
@@ -38,24 +38,81 @@
     line-height: 68px;
     text-align: center;
     color: #404040;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   
-  /* nombre-ubicacion-1 y nombre-ubicacion-2 */
-  .Encabezadín-1,
+  /* Contenedor-HV */
+  .Contenedor-HV {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #EF3B3A;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* mini-blanco */
+  .mini-blanco {
+    background: #F2F2F2;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Encabezadín-1 */
+  .Encabezadín-1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #404040;
+  }
+  
+  /* archivoHV-1 */
+  .archivoHV-1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+  }
+  
+  /* Contenedor-HV-2 */
+  .Contenedor-HV-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #EF3B3A;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  /* mini-blanco-2 */
+  .mini-blanco-2 {
+    background: #F2F2F2;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  /* Encabezadín-2 */
   .Encabezadín-2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 47px;
+    text-align: center;
     color: #404040;
-    margin: 0;
   }
   
-  /* Archivazo-1 y Archivazo-2 */
-  .archivoHV-1,
+  /* archivoHV-2 */
   .archivoHV-2 {
     font-family: 'Roboto';
     font-style: normal;
@@ -65,18 +122,5 @@
     text-align: center;
     text-decoration-line: underline;
     color: #FFFFFF;
-    margin: 0;
   }
-  
-  /* Ajuste adicional para mantener el aspecto proporcional de los elementos */
-  @media (max-width: 767px) {
-    .Contenedor-HV,
-    .mini-blanco,
-    .Contenedor-HV-2,
-    .mini-blanco-2 {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
-  
   
