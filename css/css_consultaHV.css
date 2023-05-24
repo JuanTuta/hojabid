@@ -1,0 +1,190 @@
+
+
+/* Contenedor-rojo */
+
+.container-rojo{
+position: absolute;
+width: 1529px;
+height: 819px;
+left: 191px;
+top: 191px;
+
+background: #EF3B3A;
+border-radius: 24px;
+
+}
+
+/* Coso-blanco */
+
+.container-blanco{
+position: absolute;
+width: 1357px;
+height: 727px;
+left: 277px;
+top: 237px;
+
+background: #FFFFFF;
+border-radius: 24px;
+}
+
+/* contenedorHV-1 */
+
+.Contenedor-HV{
+position: absolute;
+width: 1224px;
+height: 142px;
+left: 344px;
+top: 377px;
+
+background: #EF3B3A;
+border-radius: 15px;
+}
+
+/* mini-blanco1 */
+
+.mini-blanco{
+position: absolute;
+width: 625px;
+height: 63px;
+left: 344px;
+top: 377px;
+
+background: #F2F2F2;
+border-radius: 15px;
+}
+
+/* HV disponibles-postulantes o lo que SEA */
+
+.h1{
+position: absolute;
+width: 559px;
+height: 70px;
+left: 344px;
+top: 278px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 58px;
+line-height: 68px;
+display: flex;
+align-items: center;
+
+color: #404040;
+}
+
+
+/* nombre-ubicacion-1 */
+
+.Encabezadín-1{
+position: absolute;
+width: 693px;
+height: 70px;
+left: 363px;
+top: 374px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 47px;
+display: flex;
+align-items: center;
+
+color: #404040;
+}
+
+
+/* Archivazo-1 */
+
+.archivoHV-1{
+position: absolute;
+width: 693px;
+height: 70px;
+left: 613px;
+top: 448px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 41px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration-line: underline;
+
+color: #FFFFFF;
+}
+
+
+/* contenedorHV-2 */
+
+.Contenedor-HV-2{
+position: absolute;
+width: 1224px;
+height: 142px;
+left: 344px;
+top: 569px;
+
+background: #EF3B3A;
+border-radius: 15px;
+}
+
+
+/* mini-blanco2 */
+
+.mini-blanco-2{
+position: absolute;
+width: 625px;
+height: 63px;
+left: 344px;
+top: 569px;
+
+background: #F2F2F2;
+border-radius: 15px;
+
+}
+
+/* nombre-ubicacion-2 */
+
+.Encabezadín-2{
+position: absolute;
+width: 693px;
+height: 70px;
+left: 363px;
+top: 566px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 47px;
+display: flex;
+align-items: center;
+
+color: #404040;
+
+}
+
+/* Archivazo-2 */
+
+.archivoHV-2{
+position: absolute;
+width: 693px;
+height: 70px;
+left: 613px;
+top: 640px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 41px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration-line: underline;
+
+color: #FFFFFF;
+}
