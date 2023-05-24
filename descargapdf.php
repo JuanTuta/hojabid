@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+echo "No se encontró el archivo solicitado.";
 $serverName = "serv1prub.database.windows.net";
 $connectionOptions = array(
     "Database" => "PPagina",
