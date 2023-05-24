@@ -18,7 +18,7 @@
           </div>
         </div>
       </div>
-      <img src="imgs/rama(1).png" class="imTroll" />
+      <img src="imgs/rama (1).png" class="imTroll" />
     </div>
   </body>
 </html>
