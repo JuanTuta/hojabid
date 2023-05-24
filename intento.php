@@ -49,7 +49,7 @@ try {
                             <div class="mini-blanco-2">
                                 <h3 class="Encabezadín-2">' . $nombreDesempleado . ' (' . $nombreUbicacion . ')</h3>
                             </div>
-                            <a class="archivoHV-2" href="descargapdf.php id=' . urlencode($hvFileName) . '">Descargar HV</a>
+                            <a class="archivoHV-2" href="descargapdf.php?id=' . urlencode($hvFileName) . '">Descargar HV</a>
                         </div>';
                 }
             } else {
