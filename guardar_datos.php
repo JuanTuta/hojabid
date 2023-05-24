@@ -50,6 +50,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 } elseif ($rol === "empresa") {
                     header("Location: opciones_empresa.php");
                     exit();
+                } elseif ($rol === "administrador") {
+                    header("Location: empus.php");
+                    exit();
                 } else {
                     echo "Rol desconocido";
                 }
