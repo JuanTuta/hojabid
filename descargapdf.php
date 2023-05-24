@@ -30,23 +30,25 @@ if (isset($_GET['id'])) {
         if (sqlsrv_fetch($result) === true) {
             $hvData = sqlsrv_get_field($result, 0, SQLSRV_PHPTYPE_STREAM(SQLSRV_ENC_BINARY));
 
+            // Convertir los datos VARBINARY en un archivo PDF válido
+            $pdfData = stream_get_contents($hvData);
+            $tempFileName = tempnam(sys_get_temp_dir(), "pdf_");
+            file_put_contents($tempFileName, $pdfData);
+
             // Configurar las cabeceras para la descarga
             header('Content-Type: application/pdf');
             header('Content-Disposition: attachment; filename="' . $hvFileName . '"');
-            header('Cache-Control: private');
-            header('Pragma: private');
-            header('Content-Length: ' . sqlsrv_field_length($result, 0));
 
-            // Leer el contenido del archivo y enviarlo al navegador
-            while ($chunk = sqlsrv_fetch_stream($hvData)) {
-                echo $chunk;
-            }
+            // Enviar el contenido del archivo al navegador
+            readfile($tempFileName);
+
+            // Eliminar el archivo temporal
+            unlink($tempFileName);
 
             // Cerrar el flujo de datos
             sqlsrv_free_stmt($result);
             sqlsrv_close($conn);
-            sqlsrv_close($hvData);
-            exit();
+            exit;
         } else {
             echo "No se encontró el archivo solicitado.";
         }
@@ -57,6 +59,7 @@ if (isset($_GET['id'])) {
     echo "No se proporcionó un nombre de archivo válido.";
 }
 ?>
+
 
 
 
