@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $pregrado = $_POST["pregrado"];
     $descripcion = $_POST["descrip"];
     $rangoEdad = $_POST["reangoe"];
+    
     $ubicacion = $_POST["ubicacion"];
 
     try {
@@ -28,9 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             echo "Error de conexión";
         } else {
             // Insertar la nueva vacante en la tabla VACANTES
-            $sql = "INSERT INTO VACANTES (FECHA_INICIO, FECHA_FIN, CARGO, SALARIO, PREGRADO, DESCRIPCION, RANGO_EDAD, EMPRESA, PUNTUACION_EMPRESA, id_UBICACION)
+            $sql = "INSERT INTO VACANTES (FECHA_INICIO, FECHA_FIN, CARGO, SALARIO, PREGRADO, DESCRIPCION, RANGO_EDAD, EMPRESA, id_UBICACION)
                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
-            $params = array($fechaInicio, $fechaFin, $cargo, $salario, $pregrado, $descripcion, $rangoEdad, $_SESSION["usuario"], 0, $ubicacion);
+            $params = array($fechaInicio, $fechaFin, $cargo, $salario, $pregrado, $descripcion, $rangoEdad, $_SESSION["usuario"], $ubicacion);
             $stmt = sqlsrv_query($conn, $sql, $params);
             if ($stmt === false) {
                 die(print_r(sqlsrv_errors(), true));
