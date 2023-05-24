@@ -38,7 +38,7 @@ try {
             echo "No se encontraron registros en la tabla DESEMPLEADO6.";
             $resultUbicacion = sqlsrv_query($conn, $sqlUbicacion);
             echo "No se encontraron registros en la tabla DESEMPLEADO7.";
-            $rowUbicacion = sqlsrv_fetch_array($resultUbicacion, SQLSRV_FETCH_ASSOC);
+            $rowUbicacion = sqlsrv_fetch_array($resultUbicacion, SQLSRV_FETCH_ASSOC | SQLSRV_FETCH_NUMERIC);
             echo "No se encontraron registros en la tabla DESEMPLEADO8.";
             $nombreUbicacion = $rowUbicacion["CIUDAD"];
 
