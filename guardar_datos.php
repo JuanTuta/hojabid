@@ -35,7 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $nombreUsuario = $row["nombreUsuario"];
 
                 // Iniciar sesión y almacenar el nombre de usuario en una variable de sesión
-                session_start();
                 $_SESSION["usuario"] = $nombreUsuario;
 
                 // Obtener el rol del usuario
