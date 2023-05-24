@@ -33,20 +33,20 @@ if (isset($_GET['id'])) {
             // Configurar las cabeceras para la descarga
             header('Content-Type: application/pdf');
             header('Content-Disposition: attachment; filename="' . $hvFileName . '"');
-            echo "No se encontró el archivo solicitado.";
-            // Leer el contenido del archivo y enviarlo al navegador
-            while (!feof($hvData)) {
-                echo fread($hvData, 4096);
+
+            // Enviar el contenido del archivo al navegador
+            while ($chunk = sqlsrv_fetch_stream($result)) {
+                echo stream_get_contents($chunk);
+                flush();
             }
 
             // Cerrar el flujo de datos
-            fclose($hvData);
+            sqlsrv_free_stmt($result);
+            sqlsrv_close($conn);
+            exit;
         } else {
             echo "No se encontró el archivo solicitado.";
         }
-
-        sqlsrv_free_stmt($result);
-        sqlsrv_close($conn);
     } catch (Exception $e) {
         echo "Error: " . $e->getMessage();
     }
@@ -54,3 +54,4 @@ if (isset($_GET['id'])) {
     echo "No se proporcionó un nombre de archivo válido.";
 }
 ?>
+
