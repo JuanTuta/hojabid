@@ -80,9 +80,7 @@ h1 {
 
 /* Imagen trol */
 .imTroll {
-  position: relative;
-  width: 492px;
-  height: 492px;
-  left: -9px;
-  top: 601px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
