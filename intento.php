@@ -32,6 +32,9 @@ try {
         while ($rowDesempleado = sqlsrv_fetch_array($stmtDesempleados, SQLSRV_FETCH_ASSOC)) {
             $nombreDesempleado = $rowDesempleado["NOMBRE"];
             $ubicacionId = $rowDesempleado["ID_UBICACION"];
+            $hvData = $rowDesempleado["HV"];
+            $hvFileName = $rowDesempleado["NOMBRE_ARCHIVO_HV"];
+
 
             // Consulta para obtener el nombre de la ubicación
             $sqlUbicacion = "SELECT CIUDAD FROM UBICACION WHERE ID_UBICACION = ?";
@@ -46,7 +49,7 @@ try {
                             <div class="mini-blanco-2">
                                 <h3 class="Encabezadín-2">' . $nombreDesempleado . ' (' . $nombreUbicacion . ')</h3>
                             </div>
-                            <a class="archivoHV-2">Descargala ahora</a>
+                            <a class="archivoHV-2" href="descargapdf.php id=' . urlencode($hvFileName) . '">Descargar HV</a>
                         </div>';
                 }
             } else {
