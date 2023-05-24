@@ -20,7 +20,7 @@
                 <input type="password" name="contrasena" placeholder="Contraseña" required />
                 <button type="submit" class="button1">Iniciar sesión</button>
                 <p class="message">No está registrado? <a href="empus.php">Crear Cuenta</a></p>
-                <p class="message">Olvidó su contraseña? <a href="#">Click aquí</a></p>
+                <p class="message">Olvidó su contraseña? <a href="recuContraseña.php">Click aquí</a></p>
             </form>
         </div>
     </div>
