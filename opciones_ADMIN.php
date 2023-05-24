@@ -16,7 +16,7 @@
             </a>
           </div>
           <div class="BOTONAZO2">
-            <a href="consultaHV-empresa.php">
+            <a href="consultaHV-ADMIN.php">
             <img src="imgs/cv.png" class="imagen2" />
             </a>
           </div>
