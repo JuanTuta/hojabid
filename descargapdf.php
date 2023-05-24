@@ -33,7 +33,7 @@ if (isset($_GET['id'])) {
             // Configurar las cabeceras para la descarga
             header('Content-Type: application/pdf');
             header('Content-Disposition: attachment; filename="' . $hvFileName . '"');
-
+            echo "No se encontró el archivo solicitado.";
             // Leer el contenido del archivo y enviarlo al navegador
             while (!feof($hvData)) {
                 echo fread($hvData, 4096);
