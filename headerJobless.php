@@ -6,8 +6,7 @@ if (isset($_SESSION["usuario"])) {
     $nombreUsuario = $_SESSION["usuario"];
 } else {
     // Si la variable de sesión no existe o no tiene valor, redirigir a index.php
-    echo '<script>alert("Usuario no existe")</script>';
-    header("Location: index.php");
+    echo '<script>alert("Usuario no existe"); window.location.href = "index.php";</script>';
     exit();
 }
 ?>
