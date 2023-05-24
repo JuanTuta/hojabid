@@ -16,10 +16,14 @@ session_start();
         <h1>¿Qué quieres hacer?</h1>
         <div class="botones-container">
           <div class="BOTONAZO">
+            <a href="consultaHV-empresa.php">
             <img src="imgs/cv.png" class="imagen1" />
+            </a>
           </div>
           <div class="BOTONAZO2">
+            <a href="crea-vacante.php">
             <img src="imgs/vacante.png" class="imagen2" />
+            </a>
           </div>
     </div>
     </div>
