@@ -19,6 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $video = $_POST["video"];
     $usuario = $_POST["usuario"];
     $contrasena = $_POST["contrasena"];
+    $email = $_POST["email"];
+    $rol = "usuario";
 
     try {
         $conn = sqlsrv_connect($serverName, $connectionOptions);
@@ -37,8 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             }
 
             // Insertar en la tabla usuarioSGod
-            $sqlUsuario = "INSERT INTO usuarioSGod (nombreUsuario, contraseña) VALUES (?, ?)";
-            $paramsUsuario = array($usuario, $contrasena);
+            $sqlUsuario = "INSERT INTO usuarioSGod (nombreUsuario, contraseña, rol, email) VALUES (?, ?, ?, ?)";
+            $paramsUsuario = array($usuario, $contrasena, $rol, $email);
             $stmtUsuario = sqlsrv_query($conn, $sqlUsuario, $paramsUsuario);
             if ($stmtUsuario === false) {
                 die(print_r(sqlsrv_errors(), true));
