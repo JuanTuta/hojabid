@@ -58,6 +58,27 @@ body {
     border-radius: 15px;
   }
   
+  /* contenedorHV-2 */
+  .Contenedor-HV-2 {
+    position: relative;
+    width: 90%;
+    max-width: 1224px;
+    height: 142px;
+    background: #EF3B3A;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  
+  /* mini-blanco2 */
+  .mini-blanco-2 {
+    position: relative;
+    width: 90%;
+    max-width: 625px;
+    height: 63px;
+    background: #F2F2F2;
+    border-radius: 15px;
+  }
+  
   /* HV disponibles-postulantes o lo que SEA */
   h1 {
     position: relative;
@@ -92,6 +113,37 @@ body {
   
   /* Archivazo-1 */
   .archivoHV-1 {
+    position: relative;
+    width: 90%;
+    max-width: 693px;
+    height: 70px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+  }
+  
+  /* nombre-ubicacion-2 */
+  .Encabezadín-2 {
+    position: relative;
+    width: 90%;
+    max-width: 693px;
+    height: 70px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #404040;
+  }
+  
+  /* Archivazo-2 */
+  .archivoHV-2 {
     position: relative;
     width: 90%;
     max-width: 693px;
