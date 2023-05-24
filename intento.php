@@ -27,7 +27,9 @@ try {
     }
 
     if (sqlsrv_has_rows($result)) {
+        echo "No se encontraron registros en la tabla DESEMPLEADO4.";
         while ($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
+            echo "No se encontraron registros en la tabla DESEMPLEADO5.";
             $nombreDesempleado = $row["DESEMPLEADO"];
             $ubicacionId = $row["ID_UBICACION"];
 
