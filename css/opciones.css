@@ -7,7 +7,7 @@ body {
 .Blancou {
   position: absolute;
   width: 653.08px;
-  height: auto; /* Cambiado a auto para adaptarse al contenido */
+  height: 659px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -18,7 +18,9 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  margin-top: 140px; /* Ajusta el valor según el tamaño de tu encabezado */
 }
+
 
 /* ¿Qué quieres hacer? */
 h1 {
