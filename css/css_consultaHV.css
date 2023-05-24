@@ -1,163 +1,161 @@
-/* Estilos generales */
-body {
-    background: #F2F2F2;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  /* Contenedor-rojo */
-  .container-rojo {
+/* Contenedor-rojo */
+.container-rojo {
     position: relative;
-    width: 90%;
-    max-width: 1529px;
-    height: 90%;
-    max-height: 819px;
+    width: 100%;
+    height: 100vh;
     background: #EF3B3A;
     border-radius: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   /* Coso-blanco */
   .container-blanco {
     position: relative;
     width: 90%;
-    max-width: 1357px;
     height: 90%;
-    max-height: 727px;
+    margin: 5% auto;
     background: #FFFFFF;
     border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   
   /* contenedorHV-1 */
   .Contenedor-HV {
     position: relative;
-    width: 90%;
-    max-width: 1224px;
-    height: 142px;
+    width: 80%;
+    height: 10%;
+    margin: 5% auto;
     background: #EF3B3A;
     border-radius: 15px;
   }
   
   /* mini-blanco1 */
   .mini-blanco {
-    position: relative;
-    width: 90%;
-    max-width: 625px;
-    height: 63px;
-    background: #F2F2F2;
-    border-radius: 15px;
-  }
-  
-  /* contenedorHV-2 */
-  .Contenedor-HV-2 {
-    position: relative;
-    width: 90%;
-    max-width: 1224px;
-    height: 142px;
-    background: #EF3B3A;
-    border-radius: 15px;
-    margin-top: 20px;
-  }
-  
-  /* mini-blanco2 */
-  .mini-blanco-2 {
-    position: relative;
-    width: 90%;
-    max-width: 625px;
-    height: 63px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 10%;
     background: #F2F2F2;
     border-radius: 15px;
   }
   
   /* HV disponibles-postulantes o lo que SEA */
-  h1 {
+  .h1 {
     position: relative;
-    width: 90%;
-    max-width: 559px;
+    width: 80%;
     height: 70px;
+    margin: 0 auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 58px;
     line-height: 68px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #404040;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
   
   /* nombre-ubicacion-1 */
   .Encabezadín-1 {
     position: relative;
-    width: 90%;
-    max-width: 693px;
+    width: 80%;
     height: 70px;
+    margin: 0 auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 47px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #404040;
   }
   
   /* Archivazo-1 */
   .archivoHV-1 {
     position: relative;
-    width: 90%;
-    max-width: 693px;
+    width: 80%;
     height: 70px;
+    margin: 0 auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     text-decoration-line: underline;
     color: #FFFFFF;
   }
   
+  /* contenedorHV-2 */
+  .Contenedor-HV-2 {
+    position: relative;
+    width: 80%;
+    height: 10%;
+    margin: 5% auto;
+    background: #EF3B3A;
+    border-radius: 15px;
+  }
+  
+  /* mini-blanco2 */
+  .mini-blanco-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 10%;
+    background: #F2F2F2;
+    border-radius: 15px;
+  }
+  
   /* nombre-ubicacion-2 */
   .Encabezadín-2 {
     position: relative;
-    width: 90%;
-    max-width: 693px;
+    width: 80%;
     height: 70px;
+    margin: 0 auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 47px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #404040;
   }
   
   /* Archivazo-2 */
   .archivoHV-2 {
     position: relative;
-    width: 90%;
-    max-width: 693px;
+    width: 80%;
     height: 70px;
+    margin: 0 auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     text-decoration-line: underline;
     color: #FFFFFF;
   }
   
+  /* Estilos adicionales para pantallas de hasta 600px de ancho */
+  @media screen and (max-width: 600px) {
+    .mini-blanco,
+    .mini-blanco-2 {
+      width: 100%;
+      height: 15%;
+    }
+  }
   
   
   
