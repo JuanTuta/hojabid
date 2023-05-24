@@ -1,5 +1,5 @@
-
 <?php
+session_start();
 
 // Verificar si la variable de sesión existe y tiene un valor
 if (isset($_SESSION["usuario"])) {
@@ -34,3 +34,4 @@ if (isset($_SESSION["usuario"])) {
     </header>
   </body>
 </html>
+
