@@ -45,9 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     echo "Rol desconocido";
                 }
             } else {
-                // Mostrar mensaje de alerta y redirigir nuevamente a index.php
-                echo '<script>alert("Usuario y/o contraseña incorrectos");</script>';
-                header("Location: index.php");
+                // Mostrar mensaje de alerta y redirigir a index.php mediante JavaScript
+                echo '<script>alert("Usuario y/o contraseña incorrectos"); window.location.href = "index.php";</script>';
                 exit();
             }
 
@@ -59,6 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
+
 
 
 
