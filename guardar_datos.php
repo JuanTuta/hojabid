@@ -30,8 +30,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             // Verificar si se encontró una coincidencia de usuario y contraseña
             if (sqlsrv_has_rows($stmt)) {
-                // Obtener el rol del usuario
+                // Obtener el nombre de usuario de la consulta
                 $row = sqlsrv_fetch_array($stmt);
+                $nombreUsuario = $row["nombreUsuario"];
+
+                // Iniciar sesión y almacenar el nombre de usuario en una variable de sesión
+                session_start();
+                $_SESSION["usuario"] = $nombreUsuario;
+
+                // Obtener el rol del usuario
                 $rol = $row["rol"];
 
                 // Redirigir según el rol del usuario
@@ -58,6 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
+
 
 
 
