@@ -21,6 +21,7 @@ try {
     $sql = "SELECT * FROM DESEMPLEADO";
     $result = sqlsrv_query($conn, $sql);
 
+    echo "No se encontraron registros en la tabla DESEMPLEADO3.";
     if ($result === false) {
         die(print_r(sqlsrv_errors(), true));
     }
