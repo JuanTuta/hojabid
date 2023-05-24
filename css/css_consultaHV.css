@@ -22,6 +22,16 @@
   margin-left: 9.5%;
 }
 
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 10px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 /* contenedorHV-1 */
 .Contenedor-HV {
   position: relative;
