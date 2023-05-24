@@ -16,9 +16,9 @@
           <div class="BOTONAZO2">
             <img src="imgs/vacante.png" class="imagen2" />
           </div>
-        </div>
+    </div>
+    </div>
         <img src="imgs/rama (1).png" class="imTroll" />
       </div>
-    </div>
   </body>
 </html>
