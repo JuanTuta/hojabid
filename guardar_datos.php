@@ -36,16 +36,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                 // Redirigir según el rol del usuario
                 if ($rol === "usuario") {
-                    header("Location: crearcuentaU.php");
+                    header("Location: pagina_usuario.php");
                     exit();
                 } elseif ($rol === "empresa") {
-                    header("Location: crearcuentaE.php");
+                    header("Location: pagina_empresa.php");
                     exit();
                 } else {
                     echo "Rol desconocido";
                 }
             } else {
-                echo "Usuario y/o contraseña incorrectos";
+                // Mostrar mensaje de alerta con JavaScript
+                echo '<script>alert("Usuario y/o contraseña incorrectos");</script>';
             }
 
             // Cerrar la conexión a la base de datos
@@ -56,6 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
+
 
 
 
