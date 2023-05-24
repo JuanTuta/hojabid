@@ -19,7 +19,7 @@ if (isset($_GET['id'])) {
             die(print_r(sqlsrv_errors(), true));
         }
 
-        $sql = "SELECT HV FROM DESEMPLEADO WHERE NOMBRE_ARCHIVO_HV = ?";
+        $sql = "SELECT HV FROM DESEMPLEADO WHERE NOMBRE = ?";
         $params = array(&$hvFileName);
         $result = sqlsrv_query($conn, $sql, $params);
 

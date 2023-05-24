@@ -33,7 +33,7 @@ try {
             $nombreDesempleado = $rowDesempleado["NOMBRE"];
             $ubicacionId = $rowDesempleado["ID_UBICACION"];
             $hvData = $rowDesempleado["HV"];
-            $hvFileName = $rowDesempleado["NOMBRE_ARCHIVO_HV"];
+            $hvFileName = $rowDesempleado["NOMBRE"];
 
 
             // Consulta para obtener el nombre de la ubicación
