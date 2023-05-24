@@ -27,12 +27,12 @@ try {
     }
 
     // Consulta para obtener los datos de los desempleados
-    $sqlDesempleados = "SELECT DESEMPLEADO, ID_UBICACION FROM DESEMPLEADO";
+    $sqlDesempleados = "SELECT NOMBRE, ID_UBICACION FROM DESEMPLEADO";
     $stmtDesempleados = sqlsrv_prepare($conn, $sqlDesempleados);
 
     if (sqlsrv_execute($stmtDesempleados)) {
         while ($rowDesempleado = sqlsrv_fetch_array($stmtDesempleados, SQLSRV_FETCH_ASSOC)) {
-            $nombreDesempleado = $rowDesempleado["DESEMPLEADO"];
+            $nombreDesempleado = $rowDesempleado["NOMBRE"];
             $ubicacionId = $rowDesempleado["ID_UBICACION"];
 
             // Consulta para obtener el nombre de la ubicación
