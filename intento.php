@@ -35,11 +35,14 @@ try {
 
             // Obtener el nombre de la ubicación de la tabla UBICACION
             $sqlUbicacion = "SELECT CIUDAD FROM UBICACION WHERE ID_UBICACION = $ubicacionId";
+            echo "No se encontraron registros en la tabla DESEMPLEADO6.";
             $resultUbicacion = sqlsrv_query($conn, $sqlUbicacion);
+            echo "No se encontraron registros en la tabla DESEMPLEADO7.";
             $rowUbicacion = sqlsrv_fetch_array($resultUbicacion, SQLSRV_FETCH_ASSOC);
+            echo "No se encontraron registros en la tabla DESEMPLEADO8.";
             $nombreUbicacion = $rowUbicacion["CIUDAD"];
 
-            echo "No se encontraron registros en la tabla DESEMPLEADO6.";
+            
             // Generar el div con los datos obtenidos
             echo '<div class="Contenedor-HV-2">
                     <div class="mini-blanco-2">
