@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                 // Redirigir según el rol del usuario
                 if ($rol === "usuario") {
-                    header("Location: headerJobless.php");
+                    header("Location: opciones_jobless.php");
                     exit();
                 } elseif ($rol === "empresa") {
                     header("Location: opciones_empresa.php");
