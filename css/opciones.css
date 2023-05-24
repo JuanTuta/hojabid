@@ -1,95 +1,82 @@
-
 /* Div blanco */
-
-.blancou{
-position: absolute;
-width: 653.08px;
-height: 659px;
-left: 629px;
-top: 271px;
-
-background: #FFFFFF;
-border-radius: 24px;
-
+.blancou {
+  position: absolute;
+  width: 653.08px;
+  height: 659px;
+  left: 629px;
+  top: 271px;
+  background: #FFFFFF;
+  border-radius: 24px;
 }
 
 /* Boton 1 */
-
-.BOTONAZO{
-position: absolute;
-width: 233px;
-height: 272px;
-left: 668px;
-top: 529px;
-
-background: #EF3B3A;
-border-radius: 48px;
+.BOTONAZO {
+  position: absolute;
+  width: 233px;
+  height: 272px;
+  left: 668px;
+  top: 529px;
+  background: #EF3B3A;
+  border-radius: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Boton 2 */
-
-.BOTONAZO2{
-position: absolute;
-width: 233px;
-height: 272px;
-left: 1007px;
-top: 529px;
-
-background: #EF3B3A;
-border-radius: 48px;
+.BOTONAZO2 {
+  position: absolute;
+  width: 233px;
+  height: 272px;
+  left: 1007px;
+  top: 529px;
+  background: #EF3B3A;
+  border-radius: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* cv 1 */
+.imagen1 {
 
-.imagen1{
-position: absolute;
-width: 156px;
-height: 156px;
-left: 706px;
-top: 587px;
+  width: 156px;
+  height: 156px;
 
 }
 
 /* subirVacante */
-.imagen2{
+.imagen2 {
 
-position: absolute;
-width: 163px;
-height: 163px;
-left: 1042px;
-top: 583px;
+  width: 163px;
+  height: 163px;
 
 }
 
 /* Imagen trol */
-
-.imTroll{
-position: absolute;
-width: 492px;
-height: 492px;
-left: -9px;
-top: 601px;
-
+.imTroll {
+  position: absolute;
+  width: 492px;
+  height: 492px;
+  left: -9px;
+  top: 601px;
 }
 
-
 /* ¿Qué quieres hacer? */
-
-h1{
-position: absolute;
-width: 559px;
-height: 70px;
-left: 681px;
-top: 316px;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 58px;
-line-height: 68px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #404040;
+h1 {
+  position: absolute;
+  width: 559px;
+  height: 70px;
+  left: 681px;
+  top: 316px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #404040;
 }
