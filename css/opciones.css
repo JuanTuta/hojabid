@@ -5,7 +5,7 @@ body {
 
 /* Div blanco */
 .Blancou {
-  position: absolute;
+  position: relative;
   width: 653.08px;
   height: 659px;
   left: 50%;
@@ -18,7 +18,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin-top: calc(50vh - -62.5px);
+  margin-top: calc(70vh - -62.5px);
+
 }
 
 
