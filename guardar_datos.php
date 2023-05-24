@@ -47,6 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             } else {
                 // Mostrar mensaje de alerta con JavaScript
                 echo '<script>alert("Usuario y/o contraseña incorrectos");</script>';
+                header("Location: index.php");
             }
 
             // Cerrar la conexión a la base de datos
