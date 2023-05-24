@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Mi página web</title>
-    <link rel="stylesheet" href="css/opciones.css">
+    <link rel="stylesheet" href="css/css_consultaHV.css">
   </head>
   <body>
     <?php include 'headerEmpresa.php'; ?>
