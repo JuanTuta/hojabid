@@ -3,7 +3,7 @@ body {
 }
 
 /* Div blanco */
-.blancou {
+.Blancou {
   position: absolute;
   width: 653.08px;
   height: 659px;
@@ -21,19 +21,20 @@ body {
 
 /* Boton 1 */
 .BOTONAZO {
-  width: 233px;
-  height: 272px;
+  width: 200px;
+  height: 200px;
   background: #EF3B3A;
   border-radius: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 20px;
 }
 
 /* Boton 2 */
 .BOTONAZO2 {
-  width: 233px;
-  height: 272px;
+  width: 200px;
+  height: 200px;
   background: #EF3B3A;
   border-radius: 48px;
   display: flex;
@@ -43,14 +44,14 @@ body {
 
 /* cv 1 */
 .imagen1 {
-  width: 156px;
-  height: 156px;
+  width: 120px;
+  height: 120px;
 }
 
 /* subirVacante */
 .imagen2 {
-  width: 163px;
-  height: 163px;
+  width: 120px;
+  height: 120px;
 }
 
 /* Imagen trol */
