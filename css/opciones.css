@@ -18,7 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin-top: 140px; /* Ajusta el valor según el tamaño de tu encabezado */
+  margin-top: calc(50vh - -62.5px);
 }
 
 
