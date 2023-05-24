@@ -4,16 +4,27 @@ body {
   padding: 0;
 }
 
+/* Encabezado */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #EF3B3A;
+  z-index: 100; /* Asegura que el encabezado esté por encima del contenido */
+}
+
 #container {
   position: relative;
+  padding-top: 60px; /* Añade un espacio para el encabezado */
 }
 
 /* Div blanco */
 .Blancou {
   position: absolute;
-  width: 80%;
-  max-width: 800px;
-  height: 500px;
+  width: 653.08px;
+  height: 659px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -28,38 +39,36 @@ body {
 
 /* Boton 1 */
 .BOTONAZO {
-  width: 200px;
-  height: 200px;
+  width: 233px;
+  height: 272px;
   background: #EF3B3A;
   border-radius: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 /* Boton 2 */
 .BOTONAZO2 {
-  width: 200px;
-  height: 200px;
+  width: 233px;
+  height: 272px;
   background: #EF3B3A;
   border-radius: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 /* cv 1 */
 .imagen1 {
-  width: 120px;
-  height: 120px;
+  width: 156px;
+  height: 156px;
 }
 
 /* subirVacante */
 .imagen2 {
-  width: 120px;
-  height: 120px;
+  width: 163px;
+  height: 163px;
 }
 
 /* Imagen trol */
@@ -73,12 +82,19 @@ body {
 
 /* ¿Qué quieres hacer? */
 h1 {
+  position: absolute;
+  width: 559px;
+  height: 70px;
+  left: 681px;
+  top: 316px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
   line-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #404040;
-  margin-bottom: 20px;
 }
