@@ -1,6 +1,5 @@
-<?php
-session_start();
-?>
+
+
 
 
 <!DOCTYPE html>
@@ -34,6 +33,8 @@ session_start();
                     </div>
                     <a class="archivoHV-2">Descargala ahora</a>
             </div>
+
+            <?php include 'intento.php'; ?>
 
         </div>
     </div>
