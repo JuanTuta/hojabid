@@ -49,8 +49,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             // Cerrar la conexión a la base de datos
             sqlsrv_close($conn);
-
-            echo "Datos insertados correctamente";
+            echo '<script>alert("Usuario y/o contraseña incorrectos"); window.location.href = "index.php";</script>';
+            exit();
+            //echo "Datos insertados correctamente";
         }
     } catch (Exception $e) {
         echo "Error: " . $e->getMessage();
