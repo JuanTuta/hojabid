@@ -9,6 +9,7 @@ $connectionOptions = array(
     "Authentication" => "ActiveDirectoryPassword"
 );
 
+// Establecer la conexión con el servidor y realizar la consulta
 try {
     $conn = new mysqli($serverName, $connectionOptions["UID"], $connectionOptions["PWD"], $connectionOptions["Database"]);
 
@@ -47,3 +48,4 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
+
