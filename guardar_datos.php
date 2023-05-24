@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     header("Location: headerJobless.php");
                     exit();
                 } elseif ($rol === "empresa") {
-                    header("Location: headerEmpresa.php");
+                    header("Location: opciones_empresa.php");
                     exit();
                 } else {
                     echo "Rol desconocido";
